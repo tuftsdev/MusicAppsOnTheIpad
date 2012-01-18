@@ -1,0 +1,477 @@
+#!/bin/sh
+##
+# Copyright 2005-2009 Apple Inc.
+# All rights reserved.
+#
+# Include file used by RunPlatformUnitTests scripts.
+# Warning: This file can change in incompatible ways in future releases, or be removed altogether. Unit test invocations should use ${DEVELOPER_TOOLS_DIR}/RunUnitTests.
+##
+
+# RUPUTI-prefixed (RunPlatformUnitTests.include) methods namespaced to avoid collision with main script
+RPUTIMessage() {
+# usage: RPUTIMessage line type message
+# Echo the message to stdout as the given type of message and continue
+    echo "${DEVELOPER_DIR}/Tools/RunPlatformUnitTests.include:${1}: ${2}: ${3}"
+}
+
+RPUTINote() {
+# usage: RPUTINote line message
+# Echo the message to stdout as a note and continue
+    RPUTIMessage "${1}" note "${2}"
+}
+
+RPUTIWarning() {
+# usage: RPUTIWarning line message
+# Echo the message to stdout as a note and continue
+    RPUTIMessage "${1}" warning "${2}"
+}
+
+RPUTIError() {
+# usage: RPUTIError line message
+# Echo the message to stdout as an error and continue
+    RPUTIMessage "${1}" error "${2}"
+}
+
+RPUTIFail() {
+# usage: RPUTIFail line message
+# Echo the message to stdout and return 1, the universal error code
+    RPUTIError "${1}" "${2}"
+    exit 1
+}
+
+### Setup done automatically for all scripts which source this file
+
+# Set main build settings we rely on to sensible defaults in case this is run standalone.  The user must still specify at least PRODUCT_NAME and WRAPPER_EXTENSION, but the rest can be inferred.
+
+if [ "${ACTION}" = "" ]; then
+    ACTION=build
+fi
+
+if [ "${BUILT_PRODUCTS_DIR}" = "" ]; then
+    BUILT_PRODUCTS_DIR=`pwd`
+fi
+
+# Don't do anything if the user didn't specify a PRODUCT_NAME or a WRAPPER_EXTENSION.
+
+if [ "${PRODUCT_NAME}" = "" ]; then
+    RPUTIFail ${LINENO} "No PRODUCT_NAME specified, please set it to the name of your unit test bundle with no extension."
+fi
+
+if [ "${WRAPPER_EXTENSION}" = "" ]; then
+    RPUTIFail ${LINENO} "No WRAPPER_EXTENSION specified, please set it to the extension of your unit test bundle."
+fi
+
+# Set up the test bundle path for later.
+
+if [ "${TEST_BUNDLE_PATH}" = "" ]; then
+    TEST_BUNDLE_PATH="${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.${WRAPPER_EXTENSION}"
+fi
+
+
+### Configure_TEST_GC_STATES()
+### Figure out the GC states to run the tests for.
+#
+# This is done by inspecting GCC_ENABLE_OBJC_GC.  A test bundle
+# that is built GC-supported should have its tests run with GC
+# both on and off, a test bundle that is built GC-required should
+# have its tests run only with GC off, and any other test bundle
+# should have its tests run only with GC off.
+#
+# At the end of this process, TEST_GC_STATES will give one or
+# more GC settings to use for the tests.
+
+Configure_TEST_GC_STATES() {
+    if [ "${GCC_ENABLE_OBJC_GC}" = "" ]; then
+        GCC_ENABLE_OBJC_GC=unsupported
+    fi
+
+    case "${GCC_ENABLE_OBJC_GC}" in
+        supported)
+            TEST_GC_STATES="ON OFF"
+            ;;
+        required)
+            TEST_GC_STATES="ON"
+            ;;
+        *)
+            TEST_GC_STATES="OFF"
+            ;;
+    esac
+}
+
+### Configure_TEST_ARCHS()
+### Figure out the architecture to run the tests for.
+#
+# This is done by inspecting ARCHS and VALID_ARCHS, and understanding
+# the limitations of what different native architectures (as specified
+# by NATIVE_ARCH_ACTUAL) are capable of running.
+#
+# At the end of this process, TEST_ARCHS will have a complete list of
+# architectures to run unit tests for.
+
+AppendToTestArchs() {
+    if [ "${TEST_ARCHS}" = "" ]; then
+        TEST_ARCHS="${1}"
+    else
+        TEST_ARCHS="${TEST_ARCHS} ${1}"
+    fi
+}
+
+AppendToFailureArchs() {
+    if [ "${FAILURE_ARCHS}" = "" ]; then
+        FAILURE_ARCHS="${1}"
+    else
+        FAILURE_ARCHS="${FAILURE_ARCHS} ${1}"
+    fi
+}
+
+UpdateArchitecturesToTest() {
+    case "${NATIVE_ARCH_ACTUAL}" in
+        ppc)
+            if [ "${1}" = "ppc" ]; then
+                AppendToTestArchs "${1}"
+            fi
+            ;;
+        
+        ppc64)
+            if [ "${1}" = "ppc" -o "${1}" = "ppc64" ]; then
+                AppendToTestArchs "${1}"
+            fi
+            ;;
+            
+        i386)
+            if [ "${1}" = "i386" -o "${1}" = "ppc" ]; then
+                AppendToTestArchs "${1}"
+            fi
+            ;;
+    
+        x86_64)
+            if [ "${1}" = "i386" -o "${1}" = "x86_64" -o "${1}" = "ppc" ]; then
+                AppendToTestArchs "${1}"
+            fi
+            ;;
+            
+        *)
+            RPUTIFail ${LINENO} "Unknown native architecture: ${NATIVE_ARCH_ACTUAL}"
+            ;;
+    esac
+}
+
+Configure_TEST_ARCHS() {
+    if [ "${CURRENT_ARCH}" = "" ]; then
+        CURRENT_ARCH=`arch`
+    fi
+    
+    if [ "${ONLY_ACTIVE_ARCH}" = "YES" ]; then
+        ARCHS="${CURRENT_ARCH}"
+    fi
+
+    if [ "${ARCHS}" = "" ]; then
+        ARCHS=`arch`
+    fi
+
+    if [ "${VALID_ARCHS}" = "" ]; then
+        VALID_ARCHS=`arch`
+    fi
+
+    if [ "${NATIVE_ARCH_ACTUAL}" = "" ]; then
+        NATIVE_ARCH_ACTUAL=`arch`
+    fi
+
+    TEST_ARCHS=""
+    FAILURE_ARCHS=""
+
+    for TEST_ARCH in ${ARCHS}; do
+        for TEST_VALID_ARCH in ${VALID_ARCHS}; do
+            if [ "${TEST_VALID_ARCH}" = "${TEST_ARCH}" ]; then
+                UpdateArchitecturesToTest "${TEST_ARCH}"
+            fi
+        done
+    done
+}
+
+ValidateTestArch() {
+# usage: ValidateTestArch arch gc-state
+# returns: 0 if arch should be tested, 1 otherwise.
+# This function can be overridden by users of this include file to provide a validation method for test archs that may need to be skipped.
+# Inputs:
+# NATIVE_ARCH_ACTUAL: Native architecture of host to run tests on
+    testArch="$1"
+    testGCState="$2"
+    return 0
+}
+
+RPUTINewTemporaryDirectoryPath=""
+MakeTemporaryDirectory() {
+    local TMPDIR=`getconf DARWIN_USER_TEMP_DIR`
+    if [ $? -ne 0 ]; then
+        RPUTIFail ${LINENO} "Could not get DARWIN_USER_TEMP_DIR."
+    fi
+    local TEST_RIG_DIR=`mktemp -d ${TMPDIR}/RunPlatformUnitTests.XXXXX`
+    if [ $? -ne 0 ]; then
+        RPUTIFail ${LINENO} "Could not create temporary directory ${TEST_RIG_DIR}."
+    fi
+    RPUTINewTemporaryDirectoryPath="${TEST_RIG_DIR}"
+    return 0
+}
+
+TestFileIsFat() {
+# usage: Tests to see if the binary at the given path has multiple architectures
+# returns: 0 if the binary has a single architecture, 1 if it has multiple.
+    local FAT_PATH="$1"
+    local OTOOL_OUTPUT=`otool -f "${FAT_PATH}"`
+    if [ $? -ne 0 ]; then
+        RPUTIFail ${LINENO} "otool failed for ${FAT_PATH}."
+    fi
+    local NUM_ARCHS=`echo "${OTOOL_OUTPUT}" | awk '/nfat_arch ([0-9]+)/{print $2}'`
+    if [ $? -ne 0 ]; then
+        RPUTIFail ${LINENO} "awk failed for input ${OTOOL_OUTPUT}."
+    fi
+    if [[ -n "${NUM_ARCHS}" && "${NUM_ARCHS}" -gt 1 ]]; then
+        return 1
+    else
+        return 0
+    fi
+}
+
+RunTestsForApplication() {
+# usage: RunTestsForApplication application-path test-bundle-path
+# Runs the application, injecting the given unit tests into them via the bundle injector.
+# Inputs:
+# BUNDLE_INJECTION_LIBRARY: The bundle injection library (optional, reasonable MacOSX platform default)
+# TEST_HOST: The application to run (required)
+# TEST_GC_STATES: See Configure_TEST_GC_STATES()
+# TEST_ARCHS: See Configure_TEST_ARCHS()
+# OTHER_TEST_FLAGS: Flags to pass to the TEST_HOST
+# EXPORT_VARS: array of variables to export before running the tests, and unset afterwards
+    
+    case "${WRAPPER_EXTENSION}" in
+        octest)
+            TEST_HOST_FLAGS="-SenTest All"
+            ;;
+        
+        *)
+            TEST_HOST_FLAGS=
+            ;;
+    esac
+    
+    # Run the tests injecting the test bundle into the application once per architecture.
+    # Quite verbose because we have to ensure that we only inject the test bundle into the application.
+    # We also can't use arch(1) to do this, since the tests will wind up injected into it instead of
+    # the host.
+    
+    for EXPORT_VAR in ${EXPORT_VARS[@]}; do
+        export ${EXPORT_VAR}
+    done
+
+    RPUTINote ${LINENO} "Started tests for architectures '${TEST_ARCHS}'"
+    
+    for TEST_GC_STATE in ${TEST_GC_STATES}; do
+        for TEST_ARCH in ${TEST_ARCHS}; do
+            if ! ValidateTestArch "${TEST_ARCH}" "${TEST_GC_STATE}"; then
+                RPUTINote ${LINENO} "Skipped tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+            else
+                RPUTINote ${LINENO} "Running tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+                
+                # Only lipo if there's more than one architecture being tested.
+                
+                if [ "${TEST_ARCH}" != "${TEST_ARCHS}" ]; then
+                    # Unlike the lipo in RunTestsForBundle, we replace the original with the lipo'd binary,
+                    # in case the host cares about its executable path, & so we don't have the copy the whole app bundle.
+                    mv "${TEST_HOST}" "${TEST_HOST}-saved"
+                    lipo "${TEST_HOST}-saved" -extract_family "${TEST_ARCH}" -output "${TEST_HOST}"
+                fi
+                
+                # Prepare to run with GC off, if required.
+                
+                if [ "${TEST_GC_STATE}" = "OFF" ]; then
+                    OBJC_DISABLE_GC=YES
+                    export OBJC_DISABLE_GC
+                fi
+                
+                # Prepare to inject the test bundle into the executable.
+                
+                if [ "${BUNDLE_INJECTION_LIBRARY}" = "" ]; then
+                    BUNDLE_INJECTION_LIBRARY="${DEVELOPER_LIBRARY_DIR}/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection"
+                fi
+                
+                if [ "${DYLD_INSERT_LIBRARIES}" != "" ]; then
+                    DYLD_INSERT_LIBRARIES="${BUNDLE_INJECTION_LIBRARY}:${DYLD_INSERT_LIBRARIES}"
+                else
+                    DYLD_INSERT_LIBRARIES="${BUNDLE_INJECTION_LIBRARY}"
+                fi
+                export DYLD_INSERT_LIBRARIES
+                
+                XCInjectBundle="${2}"
+                export XCInjectBundle
+                
+                XCInjectBundleInto="${TEST_HOST}"
+                export XCInjectBundleInto
+                
+                # Run the executable and get its result.
+                
+                "${TEST_HOST}" ${TEST_HOST_FLAGS} ${OTHER_TEST_FLAGS}
+                TEST_HOST_RESULT=$?
+                
+                # Back out the environment changes.
+            
+                unset DYLD_INSERT_LIBRARIES
+                unset XCInjectBundle
+                unset XCInjectBundleInto
+                
+                if [ "${TEST_GC_STATE}" = "OFF" ]; then
+                    unset OBJC_DISABLE_GC
+                fi
+                
+                # Only "undo" lipo if there's more than one architecture being tested.
+                
+                if [ "${TEST_ARCH}" != "${TEST_ARCHS}" ]; then
+                    mv "${TEST_HOST}-saved" "${TEST_HOST}"
+                fi
+                
+                # Report status; if the test host crashed, exit immediately and make sure the error is reported.
+
+                if [ ${TEST_HOST_RESULT} -eq 0 ]; then
+                    RPUTINote ${LINENO} "Passed tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+                elif [ ${TEST_HOST_RESULT} -eq 1 ]; then
+                    RPUTIError ${LINENO} "Failed tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+                    SAW_FAILURE=YES
+                else
+                    RPUTIFail ${LINENO} "Test host '${TEST_HOST}' exited abnormally with code ${TEST_HOST_RESULT} (it may have crashed)."
+                fi
+            fi
+        done
+    done
+    
+    RPUTINote ${LINENO} "Completed tests for architectures '${TEST_ARCHS}'"
+    
+    for EXPORT_VAR in ${EXPORT_VARS[@]}; do
+        unset ${EXPORT_VAR}
+    done
+    
+    if [ "${SAW_FAILURE}" == "YES" ]; then
+        exit 1
+    else
+        exit 0
+    fi
+}
+
+RunTestsForBundle() {
+# usage: RunTestsForBundle test-bundle-path
+# Runs the unit tests for the bundle using the appropriate test rig.
+# TEST_RIG: The unit test runner (defaults to ${OTEST} or ${CPLUSTESTRIG})
+# TEST_GC_STATES: See Configure_TEST_GC_STATES()
+# TEST_ARCHS: See Configure_TEST_ARCHS()
+# OTHER_TEST_FLAGS: Flags to pass to the TEST_RIG
+# EXPORT_VARS: array of variables to export before running the tests, and unset afterwards
+
+    # The bundle should contain the unit tests to run.
+    # If they're for a framework it should link against that framework.
+    # The bundle's extension tells us which test rig to use if one isn't supplied.
+
+    if [ "${TEST_RIG}" = "" ]; then
+        case "${WRAPPER_EXTENSION}" in
+            octest)
+                TEST_RIG="${OTEST}"
+                if [ "${TEST_RIG}" = "" ]; then
+                    RPUTIFail ${LINENO} "No default test rig defined for extension '.${WRAPPER_EXTENSION}'."
+                fi
+                ;;
+        
+            cptest)
+                TEST_RIG="${CPLUSTESTRIG}"
+                if [ "${TEST_RIG}" = "" ]; then
+                    RPUTIFail ${LINENO} "No default test rig defined for extension '.${WRAPPER_EXTENSION}'."
+                fi
+                ;;
+        
+            *)
+                RPUTIFail ${LINENO} "Unknown type of test bundle '${WRAPPER_EXTENSION}', and no test rig supplied via TEST_RIG."
+                ;;
+        esac
+    fi
+
+    # Run the test rig against the test bundle once per architecture.
+
+    for EXPORT_VAR in ${EXPORT_VARS[@]}; do
+        export ${EXPORT_VAR}
+    done
+        
+    # If the test rig is fat, we'll want to lipo it so we run for correct architecture. Create a directory to hold the lipo'd rigs, if necessary
+    # We create a directory in the user's temporary dir for lipo'd rigs, to make sure we have permission to write.
+    TestFileIsFat "${TEST_RIG}"
+    local SHOULD_LIPO=$?
+    if [ ${SHOULD_LIPO} -ne 0 ]; then
+        local TEST_RIG_BASENAME=`basename "${TEST_RIG}"`
+        if [ $? -ne 0 ]; then
+            RPUTIFail ${LINENO} "basename failed for path ${TEST_RIG}."
+        fi
+        MakeTemporaryDirectory
+        local TEST_RIG_DIR="${RPUTINewTemporaryDirectoryPath}"
+    fi
+    
+    RPUTINote ${LINENO} "Started tests for architectures '${TEST_ARCHS}'"
+    
+    for TEST_GC_STATE in ${TEST_GC_STATES}; do
+        for TEST_ARCH in ${TEST_ARCHS}; do
+            if ! ValidateTestArch "${TEST_ARCH}" "${TEST_GC_STATE}"; then
+                RPUTINote ${LINENO} "Skipped tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+            else
+                RPUTINote ${LINENO} "Running tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+                
+                if [ ${SHOULD_LIPO} -ne 0 ]; then
+                    local THIN_TEST_RIG="${TEST_RIG_DIR}/${TEST_RIG_BASENAME}-${TEST_ARCH}"
+                    lipo "${TEST_RIG}" -extract_family "${TEST_ARCH}" -output "${THIN_TEST_RIG}"
+                    if [ $? -ne 0 ]; then
+                        RPUTIFail ${LINENO} "lipo failed to extract ${TEST_ARCH} from ${TEST_RIG}."
+                    fi
+                else
+                    local THIN_TEST_RIG="${TEST_RIG}"
+                fi
+                
+                if [ "${TEST_GC_STATE}" = "OFF" ]; then
+                    OBJC_DISABLE_GC=YES
+                    export OBJC_DISABLE_GC
+                fi
+                
+                "${THIN_TEST_RIG}" "${OTHER_TEST_FLAGS}" "${TEST_BUNDLE_PATH}"
+                TEST_RIG_RESULT=$?
+                
+                if [ "${TEST_GC_STATE}" = "OFF" ]; then
+                    unset OBJC_DISABLE_GC
+                fi
+                
+                # Report status; if the test rig crashed, exit immediately and make sure the error is reported.
+                
+                if [ ${TEST_RIG_RESULT} -eq 0 ]; then
+                    RPUTINote ${LINENO} "Passed tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+                elif [ ${TEST_RIG_RESULT} -eq 1 ]; then
+                    RPUTIError ${LINENO} "Failed tests for architecture '${TEST_ARCH}' (GC ${TEST_GC_STATE})"
+                    SAW_FAILURE=YES
+                else
+                    RPUTIFail ${LINENO} "Test rig '${TEST_RIG}' exited abnormally with code ${TEST_RIG_RESULT} (it may have crashed)."
+                fi
+            fi
+        done
+    done
+    
+    if [ ${SHOULD_LIPO} -ne 0 ]; then
+        # Clear out the temporary directory we created
+        rm -r "${TEST_RIG_DIR}"
+    fi
+    
+    RPUTINote ${LINENO} "Completed tests for architectures '${TEST_ARCHS}'"
+    
+    for EXPORT_VAR in ${EXPORT_VARS[@]}; do
+        unset ${EXPORT_VAR}
+    done
+    
+    if [ "${SAW_FAILURE}" == "YES" ]; then
+        exit 1
+    else
+        exit 0
+    fi
+}
+
+# Include file sourced successfully
+return 0
+

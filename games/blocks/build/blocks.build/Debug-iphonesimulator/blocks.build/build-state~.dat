@@ -1,0 +1,288 @@
+Tblocks
+v7
+r0
+t303608842.968433
+cCheck dependencies
+cProcessInfoPlistFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/Info.plist blocks-Info.plist
+cCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
+cCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
+cProcessPCH /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch.gch blocks_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/main.o /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksAppDelegate.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksViewController.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blockyView.o /Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks normal i386
+cGenerateDSYMFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app.dSYM /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks
+cTouch /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C228C9E0000000000000132
+t1277332638
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.h
+c000000004C687ABA00000000000001DE
+t1281915578
+s478
+i<UIKit/UIKit.h>
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m
+c000000004C687ABA0000000000000A8B
+t1281915578
+s2699
+i"blocksAppDelegate.h"
+i"blocksViewController.h"
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h
+c000000004C687ABA00000000000000F0
+t1281915578
+s240
+i<UIKit/UIKit.h>
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m
+c000000004C687ABA00000000000005BA
+t1281915578
+s1466
+i"blocksViewController.h"
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
+c000000004C687ABA0000000000004E1D
+t1281915578
+s19997
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
+c000000004C687C620000000000003B3B
+t1281916002
+s15163
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch
+c000000004C687ABA00000000000000B5
+t1281915578
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.h
+c000000004C687B1700000000000000D2
+t1281915671
+s210
+i<UIKit/UIKit.h>
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.m
+c000000004C687C860000000000000233
+t1281916038
+s563
+i"blockyView.h"
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app
+t1281916042
+s238
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app.dSYM
+t1281916042
+s102
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/Info.plist
+t1281916039
+s587
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/MainWindow.nib
+t1281916040
+s1121
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/PkgInfo
+t1281916039
+s8
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks
+t1281916042
+s17924
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocksViewController.nib
+t1281916040
+s875
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocks.LinkFileList
+c000000004C687C870000000000000227
+t1281916039
+s551
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksAppDelegate.o
+t1281916042
+s47692
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksViewController.o
+t1281916042
+s34392
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blockyView.o
+t1281916042
+s34300
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/main.o
+t1281916042
+s6320
+
+N/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m
+c000000004C687ABA000000000000016D
+t1281915578
+s365
+i<UIKit/UIKit.h>
+
+N/var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch.gch
+t1281916041
+s15232016
+
+Nblocks-Info.plist
+c000000004C687ABA000000000000038D
+t1281915578
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies303608839#303608839#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksAppDelegate.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s303608842.177327
+e303608842.394870
+r1
+xCompileC
+xbuild/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksAppDelegate.o
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m303608842#303608842#0(0"0(0#0#75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m8601993504#2014"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources/i386 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksAppDelegate.o0#
+
+CCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksViewController.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s303608842.367383
+e303608842.454699
+r1
+xCompileC
+xbuild/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksViewController.o
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m303608842#303608842#0(0"0(0#0#78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m8606528672#2020"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources/i386 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocksViewController.o0#
+
+CCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blockyView.o /Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s303608842.394978
+e303608842.471220
+r1
+xCompileC
+xbuild/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blockyView.o
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.m303608842#303608842#0(0"0(0#0#60"/Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.m8600311296#1992"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources/i386 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blockyView.o0#
+
+CCompileC build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/main.o /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s303608842.175817
+e303608842.367284
+r1
+xCompileC
+xbuild/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/main.o
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m303608842#303608842#0(0"0(0#0#54"/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m8605919200#1980"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources/i386 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
+s303608839.843869
+e303608840.479415
+r1
+xCompileXIB
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@25"CompileXIB MainWindow.xib303608839#303608840#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#62"/Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib8607947680#596"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/MainWindow.nib /Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
+s303608839.849026
+e303608840.453922
+r1
+xCompileXIB
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@35"CompileXIB blocksViewController.xib303608839#303608840#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#72"/Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib8607852928#616"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocksViewController.nib /Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CGenerateDSYMFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app.dSYM /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks
+s303608842.738212
+e303608842.838215
+r1
+xGenerateDSYMFile
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app.dSYM
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks
+lSLF07#2@106"GenerateDSYMFile build/Debug-iphonesimulator/blocks.app.dSYM build/Debug-iphonesimulator/blocks.app/blocks303608842#303608842#0(0"0(0#0#93"/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks8606661472#407"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app.dSYM0#
+
+CLd /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks normal i386
+s303608842.471312
+e303608842.738117
+r1
+xLd
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks
+xnormal
+xi386
+lSLF07#2@98"Link /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks303608842#303608842#0(0"0(0#0#0"8604492000#940"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator -filelist /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/Objects-normal/i386/blocks.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/blocks0#
+
+CProcessInfoPlistFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/Info.plist blocks-Info.plist
+s303608839.804373
+e303608839.843771
+r1
+xProcessInfoPlistFile
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/Info.plist
+xblocks-Info.plist
+lSLF07#2@25"Process blocks-Info.plist303608839#303608839#0(0"0(0#0#65"/Users/ltgerbilmuffin/Documents/Projects/blocks/blocks-Info.plist19140500286341228#503"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility blocks-Info.plist -genpkginfo /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app/Info.plist0#
+
+CProcessPCH /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch.gch blocks_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s303608840.479614
+e303608842.175595
+r1
+xProcessPCH
+x/var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch.gch
+xblocks_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile blocks_Prefix.pch303608840#303608842#0(0"0(0#0#65"/Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch8605844672#1864"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources/i386 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphonesimulator/blocks.build/DerivedSources -c /Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch -o /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cscssflxdqpvhgamzkljdmbxbvdh/blocks_Prefix.pch.gch0#
+
+CTouch /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app
+s303608842.838303
+e303608842.968365
+r1
+xTouch
+x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app
+lSLF07#2@92"Touch /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app303608842#303608842#0(0"0(0#0#0"8606472832#295"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphonesimulator/blocks.app0#
+

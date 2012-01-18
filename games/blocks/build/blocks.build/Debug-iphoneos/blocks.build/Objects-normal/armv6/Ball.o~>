@@ -1,0 +1,4 @@
+In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m:9:
+/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.h:27: warning: data definition has no type or storage class
+/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.h:27: warning: type defaults to 'int' in declaration of 'ax'
+/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.h:27: warning: type defaults to 'int' in declaration of 'ay'
