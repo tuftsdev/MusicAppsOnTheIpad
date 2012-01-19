@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3657C76914C7B27A001F32CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3657C76814C7B27A001F32CD /* UIKit.framework */; };
+		3657C76B14C7B27A001F32CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3657C76A14C7B27A001F32CD /* Foundation.framework */; };
+		3657C76D14C7B27A001F32CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3657C76C14C7B27A001F32CD /* CoreGraphics.framework */; };
+		3657C77314C7B27A001F32CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3657C77114C7B27A001F32CD /* InfoPlist.strings */; };
+		3657C77514C7B27A001F32CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657C77414C7B27A001F32CD /* main.m */; };
+		3657C77914C7B27A001F32CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657C77814C7B27A001F32CD /* AppDelegate.m */; };
+		3657C77C14C7B27A001F32CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657C77B14C7B27A001F32CD /* ViewController.m */; };
+		3657C77F14C7B27A001F32CD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3657C77D14C7B27A001F32CD /* ViewController.xib */; };
+		3657C78714C7B394001F32CD /* DummyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657C78614C7B394001F32CD /* DummyView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3657C76414C7B27A001F32CD /* TouchDragPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDragPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3657C76814C7B27A001F32CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3657C76A14C7B27A001F32CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3657C76C14C7B27A001F32CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3657C77014C7B27A001F32CD /* TouchDragPan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchDragPan-Info.plist"; sourceTree = "<group>"; };
+		3657C77214C7B27A001F32CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3657C77414C7B27A001F32CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3657C77614C7B27A001F32CD /* TouchDragPan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchDragPan-Prefix.pch"; sourceTree = "<group>"; };
+		3657C77714C7B27A001F32CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3657C77814C7B27A001F32CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3657C77A14C7B27A001F32CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3657C77B14C7B27A001F32CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3657C77E14C7B27A001F32CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3657C78514C7B394001F32CD /* DummyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyView.h; sourceTree = "<group>"; };
+		3657C78614C7B394001F32CD /* DummyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3657C76114C7B27A001F32CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3657C76914C7B27A001F32CD /* UIKit.framework in Frameworks */,
+				3657C76B14C7B27A001F32CD /* Foundation.framework in Frameworks */,
+				3657C76D14C7B27A001F32CD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3657C75914C7B279001F32CD = {
+			isa = PBXGroup;
+			children = (
+				3657C76E14C7B27A001F32CD /* TouchDragPan */,
+				3657C76714C7B27A001F32CD /* Frameworks */,
+				3657C76514C7B27A001F32CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3657C76514C7B27A001F32CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3657C76414C7B27A001F32CD /* TouchDragPan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3657C76714C7B27A001F32CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3657C76814C7B27A001F32CD /* UIKit.framework */,
+				3657C76A14C7B27A001F32CD /* Foundation.framework */,
+				3657C76C14C7B27A001F32CD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3657C76E14C7B27A001F32CD /* TouchDragPan */ = {
+			isa = PBXGroup;
+			children = (
+				3657C77714C7B27A001F32CD /* AppDelegate.h */,
+				3657C77814C7B27A001F32CD /* AppDelegate.m */,
+				3657C77A14C7B27A001F32CD /* ViewController.h */,
+				3657C77B14C7B27A001F32CD /* ViewController.m */,
+				3657C77D14C7B27A001F32CD /* ViewController.xib */,
+				3657C76F14C7B27A001F32CD /* Supporting Files */,
+				3657C78514C7B394001F32CD /* DummyView.h */,
+				3657C78614C7B394001F32CD /* DummyView.m */,
+			);
+			path = TouchDragPan;
+			sourceTree = "<group>";
+		};
+		3657C76F14C7B27A001F32CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3657C77014C7B27A001F32CD /* TouchDragPan-Info.plist */,
+				3657C77114C7B27A001F32CD /* InfoPlist.strings */,
+				3657C77414C7B27A001F32CD /* main.m */,
+				3657C77614C7B27A001F32CD /* TouchDragPan-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3657C76314C7B27A001F32CD /* TouchDragPan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3657C78214C7B27A001F32CD /* Build configuration list for PBXNativeTarget "TouchDragPan" */;
+			buildPhases = (
+				3657C76014C7B27A001F32CD /* Sources */,
+				3657C76114C7B27A001F32CD /* Frameworks */,
+				3657C76214C7B27A001F32CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchDragPan;
+			productName = TouchDragPan;
+			productReference = 3657C76414C7B27A001F32CD /* TouchDragPan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3657C75B14C7B279001F32CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Tufts University";
+			};
+			buildConfigurationList = 3657C75E14C7B279001F32CD /* Build configuration list for PBXProject "TouchDragPan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3657C75914C7B279001F32CD;
+			productRefGroup = 3657C76514C7B27A001F32CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3657C76314C7B27A001F32CD /* TouchDragPan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3657C76214C7B27A001F32CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3657C77314C7B27A001F32CD /* InfoPlist.strings in Resources */,
+				3657C77F14C7B27A001F32CD /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3657C76014C7B27A001F32CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3657C77514C7B27A001F32CD /* main.m in Sources */,
+				3657C77914C7B27A001F32CD /* AppDelegate.m in Sources */,
+				3657C77C14C7B27A001F32CD /* ViewController.m in Sources */,
+				3657C78714C7B394001F32CD /* DummyView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3657C77114C7B27A001F32CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3657C77214C7B27A001F32CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3657C77D14C7B27A001F32CD /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3657C77E14C7B27A001F32CD /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3657C78014C7B27A001F32CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3657C78114C7B27A001F32CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3657C78314C7B27A001F32CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchDragPan/TouchDragPan-Prefix.pch";
+				INFOPLIST_FILE = "TouchDragPan/TouchDragPan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3657C78414C7B27A001F32CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchDragPan/TouchDragPan-Prefix.pch";
+				INFOPLIST_FILE = "TouchDragPan/TouchDragPan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3657C75E14C7B279001F32CD /* Build configuration list for PBXProject "TouchDragPan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3657C78014C7B27A001F32CD /* Debug */,
+				3657C78114C7B27A001F32CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3657C78214C7B27A001F32CD /* Build configuration list for PBXNativeTarget "TouchDragPan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3657C78314C7B27A001F32CD /* Debug */,
+				3657C78414C7B27A001F32CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3657C75B14C7B279001F32CD /* Project object */;
+}
