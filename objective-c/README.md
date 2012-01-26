@@ -23,25 +23,25 @@
 * Methods (single param, multi-param) and nested messages
 * The "id" type => used to store an object of any type
 
-`- (void) setNumerator: (int) n
-^ method type. "-" = instance method, "+" = class method (performs some operation on the class itself)
-  ^^^^^^ return type
-         ^^^^^^^^^^^^ method name
-                     ^ method takes argument
-                       ^^^^ argument type
-                             ^ argument name`
+`- (void) setNumerator: (int) n'`
+`^ method type. "-" = instance method, "+" = class method (performs some operation on the class itself)`
+`  ^^^^^^ return type`
+`         ^^^^^^^^^^^^ method name`
+`                     ^ method takes argument`
+`                       ^^^^ argument type`
+`                             ^ argument name`
                              
-`@interface NEWCLASSNAME : PARENTCLASSNAME
-  // Properties and method declarations
-@end`
+`@interface NEWCLASSNAME : PARENTCLASSNAME`
+`  // Properties and method declarations`
+`@end`
 
-`@implementation NEWCLASSNAME
-{
-  // Member declarations here
-}
+`@implementation NEWCLASSNAME`
+`{`
+`  // Member declarations here`
+`}`
 
-// Method declarations here
-@end`
+`// Method declarations here`
+`@end`
 
 * Dot syntax (Objective-C 2.0; should be only used for getters and setters)
 
