@@ -1,4 +1,4 @@
-Overview:
+#Overview:#
 * Object-Oriented Programming Language
 * Circa 1980
 * Originated at NeXT which was bought out by Apple
@@ -8,7 +8,7 @@ Overview:
 * Based on "message passing".  That is, you do not call a function but you send a message!
 * In iOS, the LLVM Clang (clang) compiler is used, not gcc
 
-The Usual Gang
+#The Usual Gang#
 * Comments
 * cAsE sEnSiTiVe
 * Operations and operands
@@ -19,33 +19,33 @@ The Usual Gang
 * Format strings
 * Inheritence and overriding methods
 
-Differences
+#Differences#
 * Methods (single param, multi-param) and nested messages
 * The "id" type => used to store an object of any type
 
-- (void) setNumerator: (int) n
+`- (void) setNumerator: (int) n
 ^ method type. "-" = instance method, "+" = class method (performs some operation on the class itself)
   ^^^^^^ return type
          ^^^^^^^^^^^^ method name
                      ^ method takes argument
                        ^^^^ argument type
-                             ^ argument name
+                             ^ argument name`
                              
-@interface NEWCLASSNAME : PARENTCLASSNAME
+`@interface NEWCLASSNAME : PARENTCLASSNAME
   // Properties and method declarations
-@end
+@end`
 
-@implementation NEWCLASSNAME
+`@implementation NEWCLASSNAME
 {
   // Member declarations here
 }
 
 // Method declarations here
-@end
+@end`
 
 * Dot syntax (Objective-C 2.0; should be only used for getters and setters)
 
-Cosmic differences
+#Cosmic differences#
 * Memory management
 * Constructor
 * Destructor
@@ -53,17 +53,17 @@ Cosmic differences
 * Protocols
 * Categories
 
-Keyword Changes
+#Keyword Changes#
 * NULL => nil
 * this => self
 * new => alloc (but does NOT call constructor)
 * delete => release
 
-New
+#New#
 * All instance variables are private in Objective-C by default
 * @"" => NSString object, without the @ in a string => C style string
 
-The Foundation Framework
+#The Foundation Framework#
 * #import <Foundation/Foundation.h>
 * Collection of classes, methods, functions, and documentation logically grouped together
 * Many basic objects
@@ -76,14 +76,14 @@ The Foundation Framework
 * NSMutableArray
 * NSDictionary
 
-Hiccups
+#Hiccups#
 * Cannot overload functions; must use a different name
 * Cannot use parameter names that are same as instance variable names
 * Cannot make a member function private
 
-Using Xcode
+#Using Xcode#
 
-Using the Organizer and RTFDocumentation
+#Using the Organizer and RTFDocumentation#
 
-Resources
+#Resources#
 * http://cocoadevcentral.com/d/learn_objectivec/
