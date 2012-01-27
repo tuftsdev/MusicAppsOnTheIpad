@@ -76,10 +76,6 @@
 * `NSMutableArray`
 * `NSDictionary`
 
-#Using Xcode#
-
-#Using the Organizer and RTFDocumentation#
-
 #Resources#
 * http://cocoadevcentral.com/d/learn_objectivec/
 * http://developer.apple.com/
