@@ -38,23 +38,15 @@
 @end
 
 #Implementation Declaration (.m file)#
-@implementation NEWCLASSNAME
+`@implementation NEWCLASSNAME
 {
   // Member declarations here
-}
+}`
 
 // Method declarations here
 @end
 
 * Dot syntax (Objective-C 2.0; should be only used for getters and setters)
-
-#Cosmic differences#
-* Memory management
-* Constructor
-* Destructor
-* Accessors (better known as "properties")
-* Protocols
-* Categories
 
 #Keyword Changes#
 * NULL => nil
@@ -62,12 +54,24 @@
 * new => alloc (but does NOT call constructor)
 * delete => release
 
-#New#
+#New (or Differences)#
 * All instance variables are private in Objective-C by default
 * @"" => NSString object, without the @ in a string => C style string
+* Memory management
+* Constructor => `init`
+* Destructor => `dealloc`
+* Accessors (better known as "properties")
+  * See http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html
+* Protocols
+* Categories
+
+#Hiccups#
+* Cannot overload functions; must use a different name
+* Cannot use parameter names that are same as instance variable names
+* Cannot make a member function private
 
 #The Foundation Framework#
-* #import <Foundation/Foundation.h>
+* `#import <Foundation/Foundation.h>`
 * Collection of classes, methods, functions, and documentation logically grouped together
 * Many basic objects
 * NSObject
@@ -79,14 +83,10 @@
 * NSMutableArray
 * NSDictionary
 
-#Hiccups#
-* Cannot overload functions; must use a different name
-* Cannot use parameter names that are same as instance variable names
-* Cannot make a member function private
-
 #Using Xcode#
 
 #Using the Organizer and RTFDocumentation#
 
 #Resources#
 * http://cocoadevcentral.com/d/learn_objectivec/
+* http://developer.apple.com/

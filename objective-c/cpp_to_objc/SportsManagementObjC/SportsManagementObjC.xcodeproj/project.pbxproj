@@ -1,0 +1,244 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3690F22114D1EC750012777C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3690F22014D1EC750012777C /* Foundation.framework */; };
+		3690F22814D1EC750012777C /* SportsManagementObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3690F22714D1EC750012777C /* SportsManagementObjC.1 */; };
+		3690F23414D1EC860012777C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3690F23014D1EC860012777C /* main.m */; };
+		3690F23514D1EC860012777C /* SportsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3690F23214D1EC860012777C /* SportsClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3690F21A14D1EC750012777C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				3690F22814D1EC750012777C /* SportsManagementObjC.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3690F21C14D1EC750012777C /* SportsManagementObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SportsManagementObjC; sourceTree = BUILT_PRODUCTS_DIR; };
+		3690F22014D1EC750012777C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3690F22614D1EC750012777C /* SportsManagementObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SportsManagementObjC-Prefix.pch"; sourceTree = "<group>"; };
+		3690F22714D1EC750012777C /* SportsManagementObjC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SportsManagementObjC.1; sourceTree = "<group>"; };
+		3690F23014D1EC860012777C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3690F23114D1EC860012777C /* SportsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsClient.h; sourceTree = "<group>"; };
+		3690F23214D1EC860012777C /* SportsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3690F21914D1EC750012777C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3690F22114D1EC750012777C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3690F21114D1EC750012777C = {
+			isa = PBXGroup;
+			children = (
+				3690F22214D1EC750012777C /* SportsManagementObjC */,
+				3690F21F14D1EC750012777C /* Frameworks */,
+				3690F21D14D1EC750012777C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3690F21D14D1EC750012777C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3690F21C14D1EC750012777C /* SportsManagementObjC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3690F21F14D1EC750012777C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3690F22014D1EC750012777C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3690F22214D1EC750012777C /* SportsManagementObjC */ = {
+			isa = PBXGroup;
+			children = (
+				3690F23014D1EC860012777C /* main.m */,
+				3690F23114D1EC860012777C /* SportsClient.h */,
+				3690F23214D1EC860012777C /* SportsClient.m */,
+				3690F22714D1EC750012777C /* SportsManagementObjC.1 */,
+				3690F22514D1EC750012777C /* Supporting Files */,
+			);
+			path = SportsManagementObjC;
+			sourceTree = "<group>";
+		};
+		3690F22514D1EC750012777C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3690F22614D1EC750012777C /* SportsManagementObjC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3690F21B14D1EC750012777C /* SportsManagementObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3690F22B14D1EC750012777C /* Build configuration list for PBXNativeTarget "SportsManagementObjC" */;
+			buildPhases = (
+				3690F21814D1EC750012777C /* Sources */,
+				3690F21914D1EC750012777C /* Frameworks */,
+				3690F21A14D1EC750012777C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SportsManagementObjC;
+			productName = SportsManagementObjC;
+			productReference = 3690F21C14D1EC750012777C /* SportsManagementObjC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3690F21314D1EC750012777C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Tufts University";
+			};
+			buildConfigurationList = 3690F21614D1EC750012777C /* Build configuration list for PBXProject "SportsManagementObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3690F21114D1EC750012777C;
+			productRefGroup = 3690F21D14D1EC750012777C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3690F21B14D1EC750012777C /* SportsManagementObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3690F21814D1EC750012777C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3690F23414D1EC860012777C /* main.m in Sources */,
+				3690F23514D1EC860012777C /* SportsClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3690F22914D1EC750012777C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3690F22A14D1EC750012777C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3690F22C14D1EC750012777C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SportsManagementObjC/SportsManagementObjC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3690F22D14D1EC750012777C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SportsManagementObjC/SportsManagementObjC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3690F21614D1EC750012777C /* Build configuration list for PBXProject "SportsManagementObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3690F22914D1EC750012777C /* Debug */,
+				3690F22A14D1EC750012777C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3690F22B14D1EC750012777C /* Build configuration list for PBXNativeTarget "SportsManagementObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3690F22C14D1EC750012777C /* Debug */,
+				3690F22D14D1EC750012777C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3690F21314D1EC750012777C /* Project object */;
+}
