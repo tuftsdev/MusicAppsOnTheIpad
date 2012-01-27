@@ -13,7 +13,7 @@
 * cAsE sEnSiTiVe
 * Operations and operands
 * Most data types
-* for, while, if
+* `for`, `while`, `if`
 * Pointer variables
 * Preprocessors (and we will no longer use `iostream`)
 * Format strings
@@ -40,7 +40,7 @@
 
 * Dot syntax (Objective-C 2.0; should be only used for getters and setters)
 
-#Keyword Changes#
+#Keyword Changes, C++ to Objective-C#
 * `NULL` => `nil`
 * `this` => `self`
 * `new` => `alloc` (but does NOT call constructor)
