@@ -1,4 +1,4 @@
-#Overview:#
+#Overview#
 * Object-Oriented Programming Language
 * Circa 1980
 * Originated at NeXT which was bought out by Apple
@@ -15,48 +15,41 @@
 * Most data types
 * for, while, if
 * Pointer variables
-* Preprocessors (and we will no longer use iostream)
+* Preprocessors (and we will no longer use `iostream`)
 * Format strings
-* Inheritence and overriding methods
-
-#Differences#
-* Methods (single param, multi-param) and nested messages
-* The "id" type => used to store an object of any type
+* Inheritance and overriding methods
 
 #Method (or Function) Declaration#
-- (void) setNumerator: (int) n
-^ method type. "-" = instance method, "+" = class method (performs some operation on the class itself)
-  ^^^^^^ return type
-         ^^^^^^^^^^^^ method name
-                     ^ method takes argument
-                       ^^^^ argument type
-                             ^ argument name
+    - (void) setNumerator: (int) n
+    ^ method type. "-" = instance method, "+" = class method (performs some operation on the class itself)
+      ^^^^^^ return type
+             ^^^^^^^^^^^^ method name
+                         ^ method takes argument
+                           ^^^^ argument type
+                                 ^ argument name
 
 #Interface Declaration (.h file)#
-@interface NEWCLASSNAME : PARENTCLASSNAME
-  // Properties and method declarations
-@end
+    @interface NEWCLASSNAME : PARENTCLASSNAME
+      // Properties and method declarations
+    @end
 
 #Implementation Declaration (.m file)#
-`@implementation NEWCLASSNAME
-{
-  // Member declarations here
-}`
-
-// Method declarations here
-@end
+    @implementation NEWCLASSNAME
+      // Method declarations here
+    @end
 
 * Dot syntax (Objective-C 2.0; should be only used for getters and setters)
 
 #Keyword Changes#
-* NULL => nil
-* this => self
-* new => alloc (but does NOT call constructor)
-* delete => release
+* `NULL` => `nil`
+* `this` => `self`
+* `new` => `alloc` (but does NOT call constructor)
+* `delete` => `release`
 
 #New (or Differences)#
+* The "`id` type => used to store an object of any type
 * All instance variables are private in Objective-C by default
-* @"" => NSString object, without the @ in a string => C style string
+* `@""` => NSString object, without the `@` in a string => C style string
 * Memory management
 * Constructor => `init`
 * Destructor => `dealloc`
@@ -74,14 +67,14 @@
 * `#import <Foundation/Foundation.h>`
 * Collection of classes, methods, functions, and documentation logically grouped together
 * Many basic objects
-* NSObject
-* NSString vs. NSMutableString
-* NSSNumber
-* NSInteger
-* NSLog
-* NSArray
-* NSMutableArray
-* NSDictionary
+* `NSObject`
+* `NSString vs. NSMutableString`
+* `NSSNumber`
+* `NSInteger`
+* `NSLog`
+* `NSArray`
+* `NSMutableArray`
+* `NSDictionary`
 
 #Using Xcode#
 
