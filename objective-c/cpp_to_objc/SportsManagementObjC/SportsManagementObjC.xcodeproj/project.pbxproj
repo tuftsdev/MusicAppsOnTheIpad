@@ -11,6 +11,7 @@
 		3690F22814D1EC750012777C /* SportsManagementObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3690F22714D1EC750012777C /* SportsManagementObjC.1 */; };
 		3690F23414D1EC860012777C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3690F23014D1EC860012777C /* main.m */; };
 		3690F23514D1EC860012777C /* SportsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3690F23214D1EC860012777C /* SportsClient.m */; };
+		36D5EF3E14D48C5000DD07F7 /* Fighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D5EF3D14D48C5000DD07F7 /* Fighter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		3690F23014D1EC860012777C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3690F23114D1EC860012777C /* SportsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsClient.h; sourceTree = "<group>"; };
 		3690F23214D1EC860012777C /* SportsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsClient.m; sourceTree = "<group>"; };
+		36D5EF3C14D48C5000DD07F7 /* Fighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fighter.h; sourceTree = "<group>"; };
+		36D5EF3D14D48C5000DD07F7 /* Fighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fighter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 		3690F22214D1EC750012777C /* SportsManagementObjC */ = {
 			isa = PBXGroup;
 			children = (
+				36D5EF3C14D48C5000DD07F7 /* Fighter.h */,
+				36D5EF3D14D48C5000DD07F7 /* Fighter.m */,
 				3690F23014D1EC860012777C /* main.m */,
 				3690F23114D1EC860012777C /* SportsClient.h */,
 				3690F23214D1EC860012777C /* SportsClient.m */,
@@ -146,6 +151,7 @@
 			files = (
 				3690F23414D1EC860012777C /* main.m in Sources */,
 				3690F23514D1EC860012777C /* SportsClient.m in Sources */,
+				36D5EF3E14D48C5000DD07F7 /* Fighter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

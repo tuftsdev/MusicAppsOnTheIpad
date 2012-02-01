@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "SportsClient.h"
+#import "Fighter.h"
 
 int main (int argc, const char * argv[])
 {
     @autoreleasepool {
-        SportsClient *golfer = [[SportsClient alloc]initWithFirstName:@"Eldrick" withLastName:@"Tont"];
-        [golfer print];
+        Fighter *f = [[Fighter alloc] initWith:@"Jon" and:@"Jones" and:24 and:@"UNKNOWN"];
+        f.affiliation = @"UFC";
+        f.nickname = @"Bones";
+        f.weight = 205;
+        [f print];
     }
     return 0;
 }
