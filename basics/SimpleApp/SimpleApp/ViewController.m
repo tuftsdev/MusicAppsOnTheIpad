@@ -10,6 +10,9 @@
 
 @implementation ViewController
 
+// IBAction is used to allow your methods to be associated with actions in IB
+// Moar: http://stackoverflow.com/questions/1643007/iboutlet-and-ibaction
+
 -(IBAction)buttonTriggered
 {
     NSLog(@"DANG THIS THING WORKS!");
