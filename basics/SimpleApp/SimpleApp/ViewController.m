@@ -13,9 +13,22 @@
 // IBAction is used to allow your methods to be associated with actions in IB
 // Moar: http://stackoverflow.com/questions/1643007/iboutlet-and-ibaction
 
--(IBAction)buttonTriggered
+-(IBAction)buttonTriggered:(id)sender
 {
-    NSLog(@"DANG THIS THING WORKS!");
+    UIButton *theButton = (UIButton *)sender;
+    NSLog(@"You pressed the button %@", theButton.currentTitle);
+    UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"Button Pressed"
+                                              message:@"You sunk my battleship"
+                                             delegate:self
+                                    cancelButtonTitle:@"Nice!"
+                                         otherButtonTitles:nil,
+                         nil];
+    [view show];
+}
+
+-(IBAction)sliderChanged
+{
+    
 }
 
 - (void)didReceiveMemoryWarning

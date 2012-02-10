@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 // IBOutlet is needed to associate properties in your application with components in Interface Builder (IB)
--(IBAction)buttonTriggered;
+-(IBAction)buttonTriggered:(id)sender;
+-(IBAction)sliderChanged;
 
 @end
