@@ -10,6 +10,8 @@
 
 @implementation ViewController
 
+@synthesize player, feedbackLabel, volumeLabel;
+
 // IBAction is used to allow your methods to be associated with actions in IB
 // Moar: http://stackoverflow.com/questions/1643007/iboutlet-and-ibaction
 
@@ -17,18 +19,35 @@
 {
     UIButton *theButton = (UIButton *)sender;
     NSLog(@"You pressed the button %@", theButton.currentTitle);
-    UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"Button Pressed"
-                                              message:@"You sunk my battleship"
-                                             delegate:self
-                                    cancelButtonTitle:@"Nice!"
-                                         otherButtonTitles:nil,
-                         nil];
-    [view show];
+    if ([theButton.currentTitle isEqualToString:@"Hit Me 1!"]) {
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"Button Pressed"
+                                                      message:@"You sunk my battleship"
+                                                     delegate:self
+                                            cancelButtonTitle:@"Nice!"
+                                            otherButtonTitles:nil,
+                             nil];
+        [view show];
+    }
+    else if ([theButton.currentTitle isEqualToString:@"Hit Me One More Time"]) {
+        [feedbackLabel setText:@"Britney, is that you?"];
+    }
+    else if ([theButton.currentTitle isEqualToString:@"One Last Shot"]) {
+        
+        NSLog(@"Playing audio file...");
+        if (player != nil) {
+            [player play];
+        }
+        else {
+            NSLog(@"Whoops, something is wrong with audio player!");
+        }
+    }
 }
 
--(IBAction)sliderChanged
+-(IBAction)sliderChanged:(id)sender
 {
-    
+    UISlider *slider = (UISlider *)sender;
+    NSString *volumeText = [NSString stringWithFormat:@"%f", slider.value];
+    [volumeLabel setText:volumeText];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,8 +60,11 @@
 
 - (void)viewDidLoad
 {
+    NSError *audioError;
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSURL *urlPathOfAudio = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/krusty.mp3", [[NSBundle mainBundle] resourcePath]]];
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:urlPathOfAudio error:&audioError];
 }
 
 - (void)viewDidUnload

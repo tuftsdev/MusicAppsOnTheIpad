@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
 
+@property (strong) AVAudioPlayer *player;
+@property (nonatomic, strong) IBOutlet UILabel *feedbackLabel;
+@property (nonatomic, strong) IBOutlet UILabel *volumeLabel;
+
 // IBOutlet is needed to associate properties in your application with components in Interface Builder (IB)
 -(IBAction)buttonTriggered:(id)sender;
--(IBAction)sliderChanged;
+-(IBAction)sliderChanged:(id)sender;
 
 @end
