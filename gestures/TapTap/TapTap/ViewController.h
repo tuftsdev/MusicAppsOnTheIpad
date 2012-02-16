@@ -13,6 +13,7 @@
 @private
     int numTaps;
 }
+
 @property (nonatomic, retain) UITapGestureRecognizer *tapGestureRecognizer;
 
 @end
