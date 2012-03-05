@@ -1,4 +1,0 @@
-Two examples here:
-
-1. PostMessageApp - Uses HTTP POST
-2. EchoNestTest - Uses HTTP GET and parses JSON
