@@ -30,7 +30,7 @@
     tapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTaps:)]; // Absolutely need ":" after handleTaps
     
     // The number of fingers that must be on the screen
-    tapGestureRecognizer.numberOfTouchesRequired = 1;
+    tapGestureRecognizer.numberOfTouchesRequired = 3;
     
     // The number of taps in order for gesture to be recognized
     tapGestureRecognizer.numberOfTapsRequired = 2;
