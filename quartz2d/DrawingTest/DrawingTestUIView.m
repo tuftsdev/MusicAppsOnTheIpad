@@ -26,7 +26,7 @@
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
     // Set line width
-    CGContextSetLineWidth(currentContext, 10.0f);
+    CGContextSetLineWidth(currentContext, 5.0f);
  
     // Draw a blue filled circle
     CGContextSetFillColorWithColor(currentContext, [UIColor blueColor].CGColor);

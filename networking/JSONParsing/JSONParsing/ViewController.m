@@ -47,8 +47,7 @@
     // Iterate through tweets
     NSEnumerator *it = [json objectEnumerator];
     NSDictionary *tweet;
-    while (tweet = [it nextObject])
-    {
+    while (tweet = [it nextObject]) {
         NSLog(@"TWEET: %@", [tweet objectForKey:@"text"]);
     }
 }

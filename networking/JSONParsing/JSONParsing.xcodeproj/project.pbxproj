@@ -124,7 +124,7 @@
 		366026E615094B94003518F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Tufts University";
 			};
 			buildConfigurationList = 366026E915094B94003518F2 /* Build configuration list for PBXProject "JSONParsing" */;
@@ -277,6 +277,7 @@
 				3660270F15094B95003518F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
