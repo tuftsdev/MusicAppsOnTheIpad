@@ -16,6 +16,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Set title of table
+    self.title = @"My Tweets";
     
     // Add our table subview
     self.view.backgroundColor = [UIColor whiteColor];

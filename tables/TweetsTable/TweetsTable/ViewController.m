@@ -16,6 +16,9 @@
 {
     [super viewDidLoad];
     
+    // Set title of table
+    self.title = @"My Tweets";
+    
     // Add our table subview
     self.view.backgroundColor = [UIColor whiteColor];
     self.tweetsTable = [[UITableView alloc]initWithFrame:self.view.bounds 
