@@ -27,7 +27,7 @@
     // Set up a concurrent queue
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
-        NSData* data = [NSData dataWithContentsOfURL:url];
+        NSData *data = [NSData dataWithContentsOfURL:url];
         [self performSelectorOnMainThread:@selector(parseData:)
                                withObject:data
                             waitUntilDone:YES];

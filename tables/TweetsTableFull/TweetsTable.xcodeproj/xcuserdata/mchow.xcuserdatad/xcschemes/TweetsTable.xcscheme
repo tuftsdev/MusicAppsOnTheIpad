@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0430"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,44 +13,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36FC3A2A14BE2E2100CA36C2"
-               BuildableName = "Multiview.app"
-               BlueprintName = "Multiview"
-               ReferencedContainer = "container:Multiview.xcodeproj">
+               BlueprintIdentifier = "3638ED68150F9EFF00D2E810"
+               BuildableName = "TweetsTable.app"
+               BlueprintName = "TweetsTable"
+               ReferencedContainer = "container:TweetsTable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36FC3A4E14BE2E2100CA36C2"
-               BuildableName = "MultiviewTests.octest"
-               BlueprintName = "MultiviewTests"
-               ReferencedContainer = "container:Multiview.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36FC3A2A14BE2E2100CA36C2"
-            BuildableName = "Multiview.app"
-            BlueprintName = "Multiview"
-            ReferencedContainer = "container:Multiview.xcodeproj">
+            BlueprintIdentifier = "3638ED68150F9EFF00D2E810"
+            BuildableName = "TweetsTable.app"
+            BlueprintName = "TweetsTable"
+            ReferencedContainer = "container:TweetsTable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
@@ -61,10 +50,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36FC3A2A14BE2E2100CA36C2"
-            BuildableName = "Multiview.app"
-            BlueprintName = "Multiview"
-            ReferencedContainer = "container:Multiview.xcodeproj">
+            BlueprintIdentifier = "3638ED68150F9EFF00D2E810"
+            BuildableName = "TweetsTable.app"
+            BlueprintName = "TweetsTable"
+            ReferencedContainer = "container:TweetsTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +68,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36FC3A2A14BE2E2100CA36C2"
-            BuildableName = "Multiview.app"
-            BlueprintName = "Multiview"
-            ReferencedContainer = "container:Multiview.xcodeproj">
+            BlueprintIdentifier = "3638ED68150F9EFF00D2E810"
+            BuildableName = "TweetsTable.app"
+            BlueprintName = "TweetsTable"
+            ReferencedContainer = "container:TweetsTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

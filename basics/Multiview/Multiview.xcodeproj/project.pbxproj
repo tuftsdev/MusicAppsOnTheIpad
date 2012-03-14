@@ -204,7 +204,7 @@
 		36FC3A2214BE2E2100CA36C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Tufts University";
 			};
 			buildConfigurationList = 36FC3A2514BE2E2100CA36C2 /* Build configuration list for PBXProject "Multiview" */;
@@ -450,6 +450,7 @@
 				36FC3A6314BE2E2100CA36C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36FC3A6414BE2E2100CA36C2 /* Build configuration list for PBXNativeTarget "MultiviewTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +459,7 @@
 				36FC3A6614BE2E2100CA36C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
