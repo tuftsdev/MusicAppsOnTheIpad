@@ -124,7 +124,7 @@
 		367959FA14BE8A660019DDB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Tufts University";
 			};
 			buildConfigurationList = 367959FD14BE8A660019DDB0 /* Build configuration list for PBXProject "TipCalculator" */;

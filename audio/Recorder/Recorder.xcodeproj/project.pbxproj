@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36368A101524F22300BA7A1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36368A0F1524F22300BA7A1A /* UIKit.framework */; };
+		36368A121524F22300BA7A1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36368A111524F22300BA7A1A /* Foundation.framework */; };
+		36368A141524F22300BA7A1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36368A131524F22300BA7A1A /* CoreGraphics.framework */; };
+		36368A1A1524F22300BA7A1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36368A181524F22300BA7A1A /* InfoPlist.strings */; };
+		36368A1C1524F22300BA7A1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36368A1B1524F22300BA7A1A /* main.m */; };
+		36368A201524F22300BA7A1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36368A1F1524F22300BA7A1A /* AppDelegate.m */; };
+		36368A231524F22300BA7A1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36368A221524F22300BA7A1A /* ViewController.m */; };
+		36368A261524F22300BA7A1A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36368A241524F22300BA7A1A /* ViewController.xib */; };
+		36368A2D1524F25000BA7A1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36368A2C1524F25000BA7A1A /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36368A0B1524F22300BA7A1A /* Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36368A0F1524F22300BA7A1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		36368A111524F22300BA7A1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36368A131524F22300BA7A1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		36368A171524F22300BA7A1A /* Recorder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Recorder-Info.plist"; sourceTree = "<group>"; };
+		36368A191524F22300BA7A1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36368A1B1524F22300BA7A1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36368A1D1524F22300BA7A1A /* Recorder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recorder-Prefix.pch"; sourceTree = "<group>"; };
+		36368A1E1524F22300BA7A1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36368A1F1524F22300BA7A1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36368A211524F22300BA7A1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36368A221524F22300BA7A1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36368A251524F22300BA7A1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		36368A2C1524F25000BA7A1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36368A081524F22300BA7A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36368A2D1524F25000BA7A1A /* AVFoundation.framework in Frameworks */,
+				36368A101524F22300BA7A1A /* UIKit.framework in Frameworks */,
+				36368A121524F22300BA7A1A /* Foundation.framework in Frameworks */,
+				36368A141524F22300BA7A1A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36368A001524F22200BA7A1A = {
+			isa = PBXGroup;
+			children = (
+				36368A151524F22300BA7A1A /* Recorder */,
+				36368A0E1524F22300BA7A1A /* Frameworks */,
+				36368A0C1524F22300BA7A1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36368A0C1524F22300BA7A1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36368A0B1524F22300BA7A1A /* Recorder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36368A0E1524F22300BA7A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36368A2C1524F25000BA7A1A /* AVFoundation.framework */,
+				36368A0F1524F22300BA7A1A /* UIKit.framework */,
+				36368A111524F22300BA7A1A /* Foundation.framework */,
+				36368A131524F22300BA7A1A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36368A151524F22300BA7A1A /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				36368A1E1524F22300BA7A1A /* AppDelegate.h */,
+				36368A1F1524F22300BA7A1A /* AppDelegate.m */,
+				36368A211524F22300BA7A1A /* ViewController.h */,
+				36368A221524F22300BA7A1A /* ViewController.m */,
+				36368A241524F22300BA7A1A /* ViewController.xib */,
+				36368A161524F22300BA7A1A /* Supporting Files */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		36368A161524F22300BA7A1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36368A171524F22300BA7A1A /* Recorder-Info.plist */,
+				36368A181524F22300BA7A1A /* InfoPlist.strings */,
+				36368A1B1524F22300BA7A1A /* main.m */,
+				36368A1D1524F22300BA7A1A /* Recorder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36368A0A1524F22300BA7A1A /* Recorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36368A291524F22300BA7A1A /* Build configuration list for PBXNativeTarget "Recorder" */;
+			buildPhases = (
+				36368A071524F22300BA7A1A /* Sources */,
+				36368A081524F22300BA7A1A /* Frameworks */,
+				36368A091524F22300BA7A1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Recorder;
+			productName = Recorder;
+			productReference = 36368A0B1524F22300BA7A1A /* Recorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36368A021524F22200BA7A1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Tufts University";
+			};
+			buildConfigurationList = 36368A051524F22200BA7A1A /* Build configuration list for PBXProject "Recorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36368A001524F22200BA7A1A;
+			productRefGroup = 36368A0C1524F22300BA7A1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36368A0A1524F22300BA7A1A /* Recorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36368A091524F22300BA7A1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36368A1A1524F22300BA7A1A /* InfoPlist.strings in Resources */,
+				36368A261524F22300BA7A1A /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36368A071524F22300BA7A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36368A1C1524F22300BA7A1A /* main.m in Sources */,
+				36368A201524F22300BA7A1A /* AppDelegate.m in Sources */,
+				36368A231524F22300BA7A1A /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		36368A181524F22300BA7A1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36368A191524F22300BA7A1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		36368A241524F22300BA7A1A /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36368A251524F22300BA7A1A /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36368A271524F22300BA7A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		36368A281524F22300BA7A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36368A2A1524F22300BA7A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recorder/Recorder-Prefix.pch";
+				INFOPLIST_FILE = "Recorder/Recorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		36368A2B1524F22300BA7A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recorder/Recorder-Prefix.pch";
+				INFOPLIST_FILE = "Recorder/Recorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36368A051524F22200BA7A1A /* Build configuration list for PBXProject "Recorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36368A271524F22300BA7A1A /* Debug */,
+				36368A281524F22300BA7A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36368A291524F22300BA7A1A /* Build configuration list for PBXNativeTarget "Recorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36368A2A1524F22300BA7A1A /* Debug */,
+				36368A2B1524F22300BA7A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36368A021524F22200BA7A1A /* Project object */;
+}
