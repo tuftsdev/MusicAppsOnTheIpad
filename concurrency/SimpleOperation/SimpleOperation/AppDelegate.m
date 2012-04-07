@@ -14,7 +14,7 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
-@synthesize simpleOperation;
+@synthesize simpleOperation, simpleOperation2, simpleOperation3, queue;
 
 - (void) simpleOperationEntry:(id)paramObject
 {
@@ -32,10 +32,27 @@
 
     // Invoking an operation
     NSNumber *simpleObject = [NSNumber numberWithInteger:88];
+    NSString *str1 = @"Foo";
+    NSString *str2 = @"Bar";
     self.simpleOperation = [[NSInvocationOperation alloc] initWithTarget:self
                                                                 selector:@selector(simpleOperationEntry:)
                                                                   object:simpleObject];
-    [self.simpleOperation start];
+    
+    self.simpleOperation2 = [[NSInvocationOperation alloc] initWithTarget:self
+                                                                selector:@selector(simpleOperationEntry:)
+                                                                  object:str1];
+    
+    self.simpleOperation3 = [[NSInvocationOperation alloc] initWithTarget:self
+                                                                 selector:@selector(simpleOperationEntry:)
+                                                                   object:str2];
+    self.queue = [[NSOperationQueue alloc] init];
+    [self.queue addOperation:self.simpleOperation];
+    [self.queue addOperation:self.simpleOperation2];
+    [self.queue addOperation:self.simpleOperation3];
+    
+    NSLog(@"In main thread...");
+
+    //[self.simpleOperation start];
     return YES;
 }
 

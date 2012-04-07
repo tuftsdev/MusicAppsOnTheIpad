@@ -20,6 +20,10 @@
 - (NSURL *)applicationDocumentsDirectory;
 
 @property (nonatomic, strong) NSInvocationOperation *simpleOperation;
+@property (nonatomic, strong) NSInvocationOperation *simpleOperation2;
+@property (nonatomic, strong) NSInvocationOperation *simpleOperation3;
+@property (nonatomic, strong) NSOperationQueue *queue;
+
 - (void) simpleOperationEntry:(id)paramObject;
 
 @end

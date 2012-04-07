@@ -35,7 +35,6 @@ void (^printFrom1To1000)(void) = ^{
     
     dispatch_async(queue, printFrom1To1000);
     dispatch_async(queue, printFrom1To1000);
-    
     return YES;
 }
 
