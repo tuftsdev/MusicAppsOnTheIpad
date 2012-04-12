@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048219E815351E9F00F65AA4 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048219E715351E9F00F65AA4 /* CoreAudio.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		048219EA15351EA400F65AA4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048219E915351EA400F65AA4 /* AudioToolbox.framework */; };
+		04EC48CC153617D60014F030 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EC48CB153617D60014F030 /* AVFoundation.framework */; };
+		04EC48D115361F2B0014F030 /* AudioQueueManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04EC48D015361F2B0014F030 /* AudioQueueManager.mm */; };
+		04EDDA5B1535161800E43288 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDDA5A1535161800E43288 /* UIKit.framework */; };
+		04EDDA5D1535161800E43288 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDDA5C1535161800E43288 /* Foundation.framework */; };
+		04EDDA5F1535161800E43288 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDDA5E1535161800E43288 /* CoreGraphics.framework */; };
+		04EDDA651535161800E43288 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04EDDA631535161800E43288 /* InfoPlist.strings */; };
+		04EDDA671535161800E43288 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDA661535161800E43288 /* main.m */; };
+		04EDDA6B1535161800E43288 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDA6A1535161800E43288 /* AppDelegate.m */; };
+		04EDDA6E1535161800E43288 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDA6D1535161800E43288 /* ViewController.m */; };
+		04EDDA711535161800E43288 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EDDA6F1535161800E43288 /* ViewController_iPhone.xib */; };
+		04EDDA741535161800E43288 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EDDA721535161800E43288 /* ViewController_iPad.xib */; };
+		04EDDA7C1535173600E43288 /* AudioManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDA7B1535173600E43288 /* AudioManager.mm */; };
+		04EDDA8715351A2300E43288 /* simpleFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDA8415351A2300E43288 /* simpleFFT.cpp */; };
+		04EDDA8815351A2300E43288 /* SpectrumAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDA8615351A2300E43288 /* SpectrumAnalysis.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		048219E415351E7100F65AA4 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		048219E715351E9F00F65AA4 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		048219E915351EA400F65AA4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		04EC48CB153617D60014F030 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04EC48CF15361F2B0014F030 /* AudioQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueueManager.h; sourceTree = "<group>"; };
+		04EC48D015361F2B0014F030 /* AudioQueueManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioQueueManager.mm; sourceTree = "<group>"; };
+		04EDDA561535161800E43288 /* SimpleSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EDDA5A1535161800E43288 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04EDDA5C1535161800E43288 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04EDDA5E1535161800E43288 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04EDDA621535161800E43288 /* SimpleSamples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleSamples-Info.plist"; sourceTree = "<group>"; };
+		04EDDA641535161800E43288 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04EDDA661535161800E43288 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04EDDA681535161800E43288 /* SimpleSamples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSamples-Prefix.pch"; sourceTree = "<group>"; };
+		04EDDA691535161800E43288 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04EDDA6A1535161800E43288 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04EDDA6C1535161800E43288 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04EDDA6D1535161800E43288 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04EDDA701535161800E43288 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		04EDDA731535161800E43288 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		04EDDA7A1535173600E43288 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		04EDDA7B1535173600E43288 /* AudioManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioManager.mm; sourceTree = "<group>"; };
+		04EDDA8315351A2300E43288 /* simpleFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simpleFFT.h; sourceTree = "<group>"; };
+		04EDDA8415351A2300E43288 /* simpleFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simpleFFT.cpp; sourceTree = "<group>"; };
+		04EDDA8515351A2300E43288 /* SpectrumAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpectrumAnalysis.h; sourceTree = "<group>"; };
+		04EDDA8615351A2300E43288 /* SpectrumAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpectrumAnalysis.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04EDDA531535161800E43288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EC48CC153617D60014F030 /* AVFoundation.framework in Frameworks */,
+				048219EA15351EA400F65AA4 /* AudioToolbox.framework in Frameworks */,
+				048219E815351E9F00F65AA4 /* CoreAudio.framework in Frameworks */,
+				04EDDA5B1535161800E43288 /* UIKit.framework in Frameworks */,
+				04EDDA5D1535161800E43288 /* Foundation.framework in Frameworks */,
+				04EDDA5F1535161800E43288 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EC48CE15361F090014F030 /* GWGAudioWrapper2 */ = {
+			isa = PBXGroup;
+			children = (
+				04EC48CF15361F2B0014F030 /* AudioQueueManager.h */,
+				04EC48D015361F2B0014F030 /* AudioQueueManager.mm */,
+			);
+			name = GWGAudioWrapper2;
+			sourceTree = "<group>";
+		};
+		04EDDA4B1535161700E43288 = {
+			isa = PBXGroup;
+			children = (
+				04EDDA601535161800E43288 /* SimpleSamples */,
+				04EDDA591535161800E43288 /* Frameworks */,
+				04EDDA571535161800E43288 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04EDDA571535161800E43288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04EDDA561535161800E43288 /* SimpleSamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04EDDA591535161800E43288 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04EC48CB153617D60014F030 /* AVFoundation.framework */,
+				048219E915351EA400F65AA4 /* AudioToolbox.framework */,
+				048219E715351E9F00F65AA4 /* CoreAudio.framework */,
+				048219E415351E7100F65AA4 /* AudioUnit.framework */,
+				04EDDA5A1535161800E43288 /* UIKit.framework */,
+				04EDDA5C1535161800E43288 /* Foundation.framework */,
+				04EDDA5E1535161800E43288 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04EDDA601535161800E43288 /* SimpleSamples */ = {
+			isa = PBXGroup;
+			children = (
+				04EC48CE15361F090014F030 /* GWGAudioWrapper2 */,
+				04EDDA6F1535161800E43288 /* ViewController_iPhone.xib */,
+				04EDDA721535161800E43288 /* ViewController_iPad.xib */,
+				04EDDA6C1535161800E43288 /* ViewController.h */,
+				04EDDA6D1535161800E43288 /* ViewController.m */,
+				04EDDA821535192800E43288 /* GWGAudioWrapper */,
+				04EDDA691535161800E43288 /* AppDelegate.h */,
+				04EDDA6A1535161800E43288 /* AppDelegate.m */,
+				04EDDA611535161800E43288 /* Supporting Files */,
+			);
+			path = SimpleSamples;
+			sourceTree = "<group>";
+		};
+		04EDDA611535161800E43288 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04EDDA621535161800E43288 /* SimpleSamples-Info.plist */,
+				04EDDA631535161800E43288 /* InfoPlist.strings */,
+				04EDDA661535161800E43288 /* main.m */,
+				04EDDA681535161800E43288 /* SimpleSamples-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04EDDA821535192800E43288 /* GWGAudioWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				04EDDA8315351A2300E43288 /* simpleFFT.h */,
+				04EDDA8415351A2300E43288 /* simpleFFT.cpp */,
+				04EDDA8515351A2300E43288 /* SpectrumAnalysis.h */,
+				04EDDA8615351A2300E43288 /* SpectrumAnalysis.cpp */,
+				04EDDA7A1535173600E43288 /* AudioManager.h */,
+				04EDDA7B1535173600E43288 /* AudioManager.mm */,
+			);
+			name = GWGAudioWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04EDDA551535161800E43288 /* SimpleSamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EDDA771535161800E43288 /* Build configuration list for PBXNativeTarget "SimpleSamples" */;
+			buildPhases = (
+				04EDDA521535161800E43288 /* Sources */,
+				04EDDA531535161800E43288 /* Frameworks */,
+				04EDDA541535161800E43288 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleSamples;
+			productName = SimpleSamples;
+			productReference = 04EDDA561535161800E43288 /* SimpleSamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04EDDA4D1535161700E43288 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 04EDDA501535161700E43288 /* Build configuration list for PBXProject "SimpleSamples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04EDDA4B1535161700E43288;
+			productRefGroup = 04EDDA571535161800E43288 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04EDDA551535161800E43288 /* SimpleSamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04EDDA541535161800E43288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EDDA651535161800E43288 /* InfoPlist.strings in Resources */,
+				04EDDA711535161800E43288 /* ViewController_iPhone.xib in Resources */,
+				04EDDA741535161800E43288 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04EDDA521535161800E43288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EDDA671535161800E43288 /* main.m in Sources */,
+				04EDDA6B1535161800E43288 /* AppDelegate.m in Sources */,
+				04EDDA6E1535161800E43288 /* ViewController.m in Sources */,
+				04EDDA7C1535173600E43288 /* AudioManager.mm in Sources */,
+				04EDDA8715351A2300E43288 /* simpleFFT.cpp in Sources */,
+				04EDDA8815351A2300E43288 /* SpectrumAnalysis.cpp in Sources */,
+				04EC48D115361F2B0014F030 /* AudioQueueManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04EDDA631535161800E43288 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EDDA641535161800E43288 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04EDDA6F1535161800E43288 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EDDA701535161800E43288 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		04EDDA721535161800E43288 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EDDA731535161800E43288 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04EDDA751535161800E43288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04EDDA761535161800E43288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04EDDA781535161800E43288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSamples/SimpleSamples-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSamples/SimpleSamples-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04EDDA791535161800E43288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSamples/SimpleSamples-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSamples/SimpleSamples-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04EDDA501535161700E43288 /* Build configuration list for PBXProject "SimpleSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EDDA751535161800E43288 /* Debug */,
+				04EDDA761535161800E43288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EDDA771535161800E43288 /* Build configuration list for PBXNativeTarget "SimpleSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EDDA781535161800E43288 /* Debug */,
+				04EDDA791535161800E43288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04EDDA4D1535161700E43288 /* Project object */;
+}
