@@ -1,46 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>COMP 150-ISW: Music Apps on the iPad</title>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>COMP 150-ISW: Music Apps on the iPad</title>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Music Apps on the iPad</h1>
+<header>
+<h1>Music Apps on the iPad</h1>
+<ul>
+<li><a href="https://github.com/tuftsdev/ios">View On <strong>GitHub</strong></a></li>
+</ul>
+<iframe width="300" height="225" src="http://www.youtube.com/embed/CM_3jaO_VXE" frameborder="0" allowfullscreen></iframe>
+</header>
 
-        <ul>
-          <li><a href="https://github.com/tuftsdev/ios">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>The Encore. Returning in Spring 2013.</h1>
-        <iframe id="intro" width="700" height="480" src="http://www.youtube.com/embed/CM_3jaO_VXE" frameborder="0" allowfullscreen></iframe>
-      </section>
-      <footer>
-        <p class="view">This site is maintained by <a href="https://github.com/mchow01">Ming Chow</a> (<a href="https://github.com/mchow01">mchow01</a> on GitHub, <a href="mailto:mchow@cs.tufts.edu">mchow@cs.tufts.edu</a>)</p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-582953-15");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+<section>
+<h3>Overview</h3>
+<p>This course emphasizes developing apps for musicians on the iPad.  The course will culminate in a final project where students would demonstrate their abilities through developing a number of prototype apps.  The class will start with the Objective-C programming language and the iOS SDK.  Music theory and music notation will also be emphasized early in the course.  Students will learn how to access microphone data and low-level audio features, how to write directly to the display (for real-time rendering of the musical notes), utilize the APIs for storage, WebKit, geolocation, push button notifications, networking, data management, and multitouch.</p>
 
-  </body>
+<h3>Instructors</h3>
+<ul>
+<li>Ming Chow (<a href="mailto:mchow@cs.tufts.edu">mchow@cs.tufts.edu</a>)</li>
+<li>Paul Lehrman (<a href="mailto:paul.lehrman@tufts.edu">paul.lehrman@tufts.edu</a>)</li>
+</ul>
+
+<h3>Class Time</h3>
+<ul>
+<li>Tuesdays and Thursdays, 4:30 - 5:45 PM in Granoff 251</li>
+</ul>
+
+<h3>Prerequisites</h3>
+<ol>
+<li>COMP 40: Machine Structure and Assembly-Language Programming</li>
+<li>Music literacy by satisfying one of the following:
+<ul>
+<li>AP Music Theory</li>
+<li>MUSIC 10, 11, 64</li>
+<li>Permission of instructors</li>
+</ul>
+</li>
+</ol>
+
+<h3>Textbook</h3>
+<ul>
+<li>None</li>
+</ul>
+
+<h3>Course Requirements</h3>
+<ul>
+<li>(90%) A team-developed app.  Apps must adhere to <a href="http://developer.apple.com/appstore/guidelines.html" target="_blank">App Store Review Guidelines</a>.</li>
+<li>(10%) Class participation and subjective factors</li>
+</ul>
+
+<h3>Syllabus and Lectures</h3>
+<p>The following topics will be covered:</p>
+<ol>
+<li>Objective-C</li>
+<li>Music Theory, Music Notation, and Sheet Music</li>
+<li>iOS SDK</li>
+<li>User Interface and User Interaction</li>
+<li>Testing on Hardware</li>
+<li>Gestures</li>
+<li>2D Drawing</li>
+<li>Networking</li>
+<li>Multiple and Nested Views</li>
+<li>Tables</li>
+<li>The Accelerometer</li>
+<li>Data Persistence and Core Data</li>
+<li>Concurrency</li>
+<li>Core MIDI Framework</li>
+<li>Performance and Responsiveness Tuning</li>
+</ol>
+
+<h3>References</h3>
+<ul>
+<li><a href="http://developer.apple.com/" target="_blank">Apple Developer</a></li>
+<li><a href="http://evolver.fm/" target="_blank">evolver.fm</a></li>
+<li><a href="https://github.com/petegoodliffe/PGMidi" target="_blank">PGMidi</a></li>
+<li><a href="http://tones.wolfram.com/" target="_blank">Wolfram Tones</a></li>
+</ul>
+
+</section>
+
+<footer>
+<p class="view">This site is maintained by <a href="https://github.com/mchow01">Ming Chow</a> (<a href="https://github.com/mchow01">mchow01</a> on GitHub, <a href="mailto:mchow@cs.tufts.edu">mchow@cs.tufts.edu</a>)</p>
+<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+
+</div>
+
+<script src="javascripts/scale.fix.js"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-582953-15");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
 </html>
