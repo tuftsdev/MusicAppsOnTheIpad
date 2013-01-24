@@ -47,7 +47,7 @@
 * `delete` => `release`
 
 #New (or Differences)#
-* The "`id` type => used to store an object of any type
+* The `id` type => used to store an object of any type
 * All instance variables are private in Objective-C by default
 * `@""` => NSString object, without the `@` in a string => C style string
 * Memory management
