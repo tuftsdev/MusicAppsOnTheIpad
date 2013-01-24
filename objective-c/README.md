@@ -1,3 +1,7 @@
+#Assumptions#
+* You have programming experience with C and C++
+* Knowing Java is helpful too
+
 #Overview#
 * Object-Oriented Programming Language
 * Circa 1980
@@ -15,7 +19,8 @@
 * Most data types
 * `for`, `while`, `if`
 * Pointer variables
-* Preprocessors (and we will no longer use `iostream`)
+* Preprocessors
+  * It goes without saying `iostream` is not used!
 * Format strings
 * Inheritance and overriding methods
 
@@ -54,8 +59,10 @@
 * Constructor => `init`
 * Destructor => `dealloc`
 * Accessors (better known as "properties")
-  * See http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html
+  * Read http://developer.apple.com/library/ios/#documentation/cocoa/conceptual/ProgrammingWithObjectiveC/EncapsulatingData/EncapsulatingData.html
+  * Good read: "What clang taught us about Objective-C properties" http://www.crashlytics.com/blog/what-clang-taught-us-about-objective-c-properties/
 * Protocols
+  * http://developer.apple.com/library/ios/#documentation/cocoa/conceptual/ProgrammingWithObjectiveC/WorkingwithProtocols/WorkingwithProtocols.html#//apple_ref/doc/uid/TP40011210-CH11-SW1
 * Categories
 
 #Hiccups#
