@@ -83,6 +83,9 @@
 * `NSMutableArray`
 * `NSDictionary`
 
+#Exercises#
+1. Convert the C++ project in `cpp_to_objc/MyRectCpp` as best as you can to Objective-C
+
 #Resources#
 * http://cocoadevcentral.com/d/learn_objectivec/
 * http://developer.apple.com/
