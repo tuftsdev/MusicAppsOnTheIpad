@@ -10,6 +10,8 @@
 
 @implementation ViewController
 
+@synthesize feedbackLabel, volumeLabel;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -22,9 +24,32 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction) buttonPressed
+-(IBAction)buttonTriggered:(id)sender
 {
-    NSLog(@"You pressed the button!");
+    UIButton *theButton = (UIButton *)sender;
+    NSLog(@"You pressed the button %@", theButton.currentTitle);
+    if ([theButton.currentTitle isEqualToString:@"Hit Me One"]) {
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"Button Pressed"
+                                                      message:@"You sunk my battleship"
+                                                     delegate:self
+                                            cancelButtonTitle:@"Nice!"
+                                            otherButtonTitles:nil,
+                             nil];
+        [view show];
+    }
+    else if ([theButton.currentTitle isEqualToString:@"Hit Me One More Time"]) {
+        [feedbackLabel setText:@"Britney, is that you?"];
+    }
+    else if ([theButton.currentTitle isEqualToString:@"One Last Shot"]) {
+        [feedbackLabel setText:@"Finished playing."];
+    }
+}
+
+-(IBAction)sliderChanged:(id)sender
+{
+    UISlider *slider = (UISlider *)sender;
+    NSString *volumeText = [NSString stringWithFormat:@"%f", slider.value];
+    [volumeLabel setText:volumeText];
 }
 
 @end

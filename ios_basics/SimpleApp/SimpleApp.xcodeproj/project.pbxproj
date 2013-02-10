@@ -467,6 +467,7 @@
 				36505A5316BB26D600829D28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36505A5416BB26D600829D28 /* Build configuration list for PBXNativeTarget "SimpleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +476,7 @@
 				36505A5616BB26D600829D28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

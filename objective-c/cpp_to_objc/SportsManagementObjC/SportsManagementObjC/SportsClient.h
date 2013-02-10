@@ -26,7 +26,11 @@
 -(id) init;
 -(id) initWithFirstName: (NSString *) fname withLastName: (NSString *) lname;
 -(id) initWithFirstName: (NSString *) fname withLastName: (NSString *) lname withAge: (unsigned int) a withEmail: (NSString *) e;
+
+// Name of function is really:
+// sendEmailWithSubject: withMessage:
 -(void) sendEmailWithSubject: (NSString *) subject withMessage: (NSString *) message;
+
 -(void) print;
 -(void) dealloc;
 

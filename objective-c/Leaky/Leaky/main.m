@@ -10,12 +10,12 @@
 
 int main (int argc, const char * argv[])
 {
-    //@autoreleasepool {
+    @autoreleasepool {
         NSMutableString *poc = [[NSMutableString alloc] initWithString:@"Leaker"];
         while (1) {
             [poc stringByAppendingFormat:poc];
         }        
-    //}
+    }
     return 0;
 }
 
