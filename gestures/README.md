@@ -3,7 +3,7 @@
 * Must be added to instances of the `UIView` class
 * A single view can have more than one gesture recognizer
 
-#The Gesture Recognizers in iOS 5#
+#The Gesture Recognizers in iOS#
 * Swipe (`UISwipeGestureRecognizer`)
 * Rotation (`UIRotationGestureRecognizer`)
 * Pinch (`UIPinchGestureRecognizer`)
