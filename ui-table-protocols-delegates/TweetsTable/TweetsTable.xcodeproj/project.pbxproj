@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3638ED6E150F9EFF00D2E810 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3638ED6D150F9EFF00D2E810 /* UIKit.framework */; };
+		3638ED70150F9EFF00D2E810 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3638ED6F150F9EFF00D2E810 /* Foundation.framework */; };
+		3638ED72150F9EFF00D2E810 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3638ED71150F9EFF00D2E810 /* CoreGraphics.framework */; };
+		3638ED78150F9EFF00D2E810 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3638ED76150F9EFF00D2E810 /* InfoPlist.strings */; };
+		3638ED7A150F9EFF00D2E810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638ED79150F9EFF00D2E810 /* main.m */; };
+		3638ED7E150F9EFF00D2E810 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638ED7D150F9EFF00D2E810 /* AppDelegate.m */; };
+		3638ED81150F9EFF00D2E810 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3638ED80150F9EFF00D2E810 /* ViewController.m */; };
+		3638ED84150F9EFF00D2E810 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3638ED82150F9EFF00D2E810 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3638ED69150F9EFF00D2E810 /* TweetsTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetsTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3638ED6D150F9EFF00D2E810 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3638ED6F150F9EFF00D2E810 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3638ED71150F9EFF00D2E810 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3638ED75150F9EFF00D2E810 /* TweetsTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetsTable-Info.plist"; sourceTree = "<group>"; };
+		3638ED77150F9EFF00D2E810 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3638ED79150F9EFF00D2E810 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3638ED7B150F9EFF00D2E810 /* TweetsTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweetsTable-Prefix.pch"; sourceTree = "<group>"; };
+		3638ED7C150F9EFF00D2E810 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3638ED7D150F9EFF00D2E810 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3638ED7F150F9EFF00D2E810 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3638ED80150F9EFF00D2E810 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3638ED83150F9EFF00D2E810 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3638ED66150F9EFF00D2E810 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3638ED6E150F9EFF00D2E810 /* UIKit.framework in Frameworks */,
+				3638ED70150F9EFF00D2E810 /* Foundation.framework in Frameworks */,
+				3638ED72150F9EFF00D2E810 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3638ED5E150F9EFF00D2E810 = {
+			isa = PBXGroup;
+			children = (
+				3638ED73150F9EFF00D2E810 /* TweetsTable */,
+				3638ED6C150F9EFF00D2E810 /* Frameworks */,
+				3638ED6A150F9EFF00D2E810 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3638ED6A150F9EFF00D2E810 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3638ED69150F9EFF00D2E810 /* TweetsTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3638ED6C150F9EFF00D2E810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3638ED6D150F9EFF00D2E810 /* UIKit.framework */,
+				3638ED6F150F9EFF00D2E810 /* Foundation.framework */,
+				3638ED71150F9EFF00D2E810 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3638ED73150F9EFF00D2E810 /* TweetsTable */ = {
+			isa = PBXGroup;
+			children = (
+				3638ED7C150F9EFF00D2E810 /* AppDelegate.h */,
+				3638ED7D150F9EFF00D2E810 /* AppDelegate.m */,
+				3638ED7F150F9EFF00D2E810 /* ViewController.h */,
+				3638ED80150F9EFF00D2E810 /* ViewController.m */,
+				3638ED82150F9EFF00D2E810 /* ViewController.xib */,
+				3638ED74150F9EFF00D2E810 /* Supporting Files */,
+			);
+			path = TweetsTable;
+			sourceTree = "<group>";
+		};
+		3638ED74150F9EFF00D2E810 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3638ED75150F9EFF00D2E810 /* TweetsTable-Info.plist */,
+				3638ED76150F9EFF00D2E810 /* InfoPlist.strings */,
+				3638ED79150F9EFF00D2E810 /* main.m */,
+				3638ED7B150F9EFF00D2E810 /* TweetsTable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3638ED68150F9EFF00D2E810 /* TweetsTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3638ED87150F9EFF00D2E810 /* Build configuration list for PBXNativeTarget "TweetsTable" */;
+			buildPhases = (
+				3638ED65150F9EFF00D2E810 /* Sources */,
+				3638ED66150F9EFF00D2E810 /* Frameworks */,
+				3638ED67150F9EFF00D2E810 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetsTable;
+			productName = TweetsTable;
+			productReference = 3638ED69150F9EFF00D2E810 /* TweetsTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3638ED60150F9EFF00D2E810 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tufts University";
+			};
+			buildConfigurationList = 3638ED63150F9EFF00D2E810 /* Build configuration list for PBXProject "TweetsTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3638ED5E150F9EFF00D2E810;
+			productRefGroup = 3638ED6A150F9EFF00D2E810 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3638ED68150F9EFF00D2E810 /* TweetsTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3638ED67150F9EFF00D2E810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3638ED78150F9EFF00D2E810 /* InfoPlist.strings in Resources */,
+				3638ED84150F9EFF00D2E810 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3638ED65150F9EFF00D2E810 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3638ED7A150F9EFF00D2E810 /* main.m in Sources */,
+				3638ED7E150F9EFF00D2E810 /* AppDelegate.m in Sources */,
+				3638ED81150F9EFF00D2E810 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3638ED76150F9EFF00D2E810 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3638ED77150F9EFF00D2E810 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3638ED82150F9EFF00D2E810 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3638ED83150F9EFF00D2E810 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3638ED85150F9EFF00D2E810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3638ED86150F9EFF00D2E810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3638ED88150F9EFF00D2E810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetsTable/TweetsTable-Prefix.pch";
+				INFOPLIST_FILE = "TweetsTable/TweetsTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3638ED89150F9EFF00D2E810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetsTable/TweetsTable-Prefix.pch";
+				INFOPLIST_FILE = "TweetsTable/TweetsTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3638ED63150F9EFF00D2E810 /* Build configuration list for PBXProject "TweetsTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3638ED85150F9EFF00D2E810 /* Debug */,
+				3638ED86150F9EFF00D2E810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3638ED87150F9EFF00D2E810 /* Build configuration list for PBXNativeTarget "TweetsTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3638ED88150F9EFF00D2E810 /* Debug */,
+				3638ED89150F9EFF00D2E810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3638ED60150F9EFF00D2E810 /* Project object */;
+}
