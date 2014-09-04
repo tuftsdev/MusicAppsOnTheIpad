@@ -89,3 +89,4 @@
 #Resources#
 * http://cocoadevcentral.com/d/learn_objectivec/
 * http://developer.apple.com/
+* http://rypress.com/tutorials/objective-c/introduction.html
