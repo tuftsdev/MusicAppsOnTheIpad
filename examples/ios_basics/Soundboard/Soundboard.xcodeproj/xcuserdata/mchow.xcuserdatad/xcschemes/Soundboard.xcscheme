@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+   LastUpgradeVersion = "0610"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36F57A8314C4E1FD00A0CE43"
-               BuildableName = "DrawingTest.app"
-               BlueprintName = "DrawingTest"
-               ReferencedContainer = "container:DrawingTest.xcodeproj">
+               BlueprintIdentifier = "365B195F1A841DEA0032444D"
+               BuildableName = "Soundboard.app"
+               BlueprintName = "Soundboard"
+               ReferencedContainer = "container:Soundboard.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "365B19781A841DEA0032444D"
+               BuildableName = "SoundboardTests.xctest"
+               BlueprintName = "SoundboardTests"
+               ReferencedContainer = "container:Soundboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,14 +42,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "365B19781A841DEA0032444D"
+               BuildableName = "SoundboardTests.xctest"
+               BlueprintName = "SoundboardTests"
+               ReferencedContainer = "container:Soundboard.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36F57A8314C4E1FD00A0CE43"
-            BuildableName = "DrawingTest.app"
-            BlueprintName = "DrawingTest"
-            ReferencedContainer = "container:DrawingTest.xcodeproj">
+            BlueprintIdentifier = "365B195F1A841DEA0032444D"
+            BuildableName = "Soundboard.app"
+            BlueprintName = "Soundboard"
+            ReferencedContainer = "container:Soundboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -50,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36F57A8314C4E1FD00A0CE43"
-            BuildableName = "DrawingTest.app"
-            BlueprintName = "DrawingTest"
-            ReferencedContainer = "container:DrawingTest.xcodeproj">
+            BlueprintIdentifier = "365B195F1A841DEA0032444D"
+            BuildableName = "Soundboard.app"
+            BlueprintName = "Soundboard"
+            ReferencedContainer = "container:Soundboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -68,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36F57A8314C4E1FD00A0CE43"
-            BuildableName = "DrawingTest.app"
-            BlueprintName = "DrawingTest"
-            ReferencedContainer = "container:DrawingTest.xcodeproj">
+            BlueprintIdentifier = "365B195F1A841DEA0032444D"
+            BuildableName = "Soundboard.app"
+            BlueprintName = "Soundboard"
+            ReferencedContainer = "container:Soundboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
