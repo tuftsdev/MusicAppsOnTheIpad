@@ -1,256 +1,0 @@
-TControlsFun
-v7
-r0
-t283756020.553622
-cCheck dependencies
-cProcessInfoPlistFile /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/Info.plist ControlsFun-Info.plist
-cCompileXIB /Users/mchow/Documents/Development/ControlsFun/MainWindow.xib
-cCompileXIB /Users/mchow/Documents/Development/ControlsFun/ControlsFunViewController.xib
-cProcessPCH /var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch.gch ControlsFun_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/main.o /Users/mchow/Documents/Development/ControlsFun/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunAppDelegate.o /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunViewController.o /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun normal i386
-cGenerateDSYMFile /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app.dSYM /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun
-cTouch /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
-c000000004B2B00A600000000000000EE
-t1261109414
-s238
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004ABDC853000000000026EE30
-t1253951571
-s2551344
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004ABDC952000000000027E880
-t1253951826
-s2615424
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004ABDC93F0000000000001355
-t1253951807
-s4949
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004ABDEE1D0000000000000788
-t1253961245
-s1928
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004ABDEEE200000000016721E0
-t1253961442
-s23536096
-
-N/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.h
-c000000004B393E0800000000000001F4
-t1262042632
-s500
-i<UIKit/UIKit.h>
-
-N/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.m
-c000000004B393E08000000000000027B
-t1262042632
-s635
-i"ControlsFunAppDelegate.h"
-i"ControlsFunViewController.h"
-
-N/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.h
-c000000004B3987C00000000000000243
-t1262061504
-s579
-i<UIKit/UIKit.h>
-
-N/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.m
-c000000004B398A9700000000000009CA
-t1262062231
-s2506
-i"ControlsFunViewController.h"
-
-N/Users/mchow/Documents/Development/ControlsFun/ControlsFunViewController.xib
-c000000004B398A780000000000007568
-t1262062200
-s30056
-
-N/Users/mchow/Documents/Development/ControlsFun/ControlsFun_Prefix.pch
-c000000004B393E0900000000000000BF
-t1262042633
-s191
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/mchow/Documents/Development/ControlsFun/MainWindow.xib
-c000000004B393E08000000000000247A
-t1262042632
-s9338
-
-N/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFun.LinkFileList
-c000000004B398E7200000000000001C5
-t1262063218
-s453
-
-N/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunAppDelegate.o
-t1262063220
-s38292
-
-N/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunViewController.o
-t1262063220
-s36564
-
-N/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/main.o
-t1262063220
-s5972
-
-N/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app
-t1262063220
-s238
-
-N/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app.dSYM
-t1262063220
-s102
-
-N/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun
-t1262063220
-s21204
-
-N/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFunViewController.nib
-t1262063219
-s4459
-
-N/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/Info.plist
-t1262063218
-s616
-
-N/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/MainWindow.nib
-t1262063219
-s1503
-
-N/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/PkgInfo
-t1262063218
-s8
-
-N/Users/mchow/Documents/Development/ControlsFun/main.m
-c000000004B393E09000000000000016A
-t1262042633
-s362
-i<UIKit/UIKit.h>
-
-N/var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch.gch
-t1262063220
-s13034960
-
-NControlsFun-Info.plist
-c000000004B398E710000000000000395
-t1262063217
-s917
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies283756018#283756018#0(0"0(0#1#0"4300885448#0"0#
-
-CCompileC build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunAppDelegate.o /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s283756020.363310
-e283756020.463148
-r1
-xCompileC
-xbuild/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunAppDelegate.o
-x/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@87"Compile /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.m283756020#283756020#0(0"0(0#0#79"/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.m4300885448#2071"    cd /Users/mchow/Documents/Development/ControlsFun    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-generated-files.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-own-target-headers.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-all-target-headers.hmap -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-project-headers.hmap -F/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator -I/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/include -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources/i386 -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources -include /var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch -c /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunAppDelegate.m -o /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunAppDelegate.o0#
-
-CCompileC build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunViewController.o /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s283756020.423618
-e283756020.511442
-r1
-xCompileC
-xbuild/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunViewController.o
-x/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.m283756020#283756020#0(0"0(0#0#82"/Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.m4300885448#2077"    cd /Users/mchow/Documents/Development/ControlsFun    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-generated-files.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-own-target-headers.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-all-target-headers.hmap -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-project-headers.hmap -F/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator -I/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/include -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources/i386 -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources -include /var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch -c /Users/mchow/Documents/Development/ControlsFun/Classes/ControlsFunViewController.m -o /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFunViewController.o0#
-
-CCompileC build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/main.o /Users/mchow/Documents/Development/ControlsFun/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s283756020.361809
-e283756020.423375
-r1
-xCompileC
-xbuild/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/main.o
-x/Users/mchow/Documents/Development/ControlsFun/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/mchow/Documents/Development/ControlsFun/main.m283756020#283756020#0(0"0(0#0#53"/Users/mchow/Documents/Development/ControlsFun/main.m4300885448#2027"    cd /Users/mchow/Documents/Development/ControlsFun    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-generated-files.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-own-target-headers.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-all-target-headers.hmap -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-project-headers.hmap -F/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator -I/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/include -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources/i386 -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources -include /var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch -c /Users/mchow/Documents/Development/ControlsFun/main.m -o /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/mchow/Documents/Development/ControlsFun/ControlsFunViewController.xib
-s283756018.920565
-e283756019.363819
-r1
-xCompileXIB
-x/Users/mchow/Documents/Development/ControlsFun/ControlsFunViewController.xib
-lSLF07#2@40"CompileXIB ControlsFunViewController.xib283756018#283756019#0(0"0(0#0#76"/Users/mchow/Documents/Development/ControlsFun/ControlsFunViewController.xib4300885448#540"    cd /Users/mchow/Documents/Development/ControlsFun    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFunViewController.nib /Users/mchow/Documents/Development/ControlsFun/ControlsFunViewController.xib0#
-
-CCompileXIB /Users/mchow/Documents/Development/ControlsFun/MainWindow.xib
-s283756018.919843
-e283756019.229270
-r1
-xCompileXIB
-x/Users/mchow/Documents/Development/ControlsFun/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib283756018#283756019#0(0"0(0#0#61"/Users/mchow/Documents/Development/ControlsFun/MainWindow.xib4300885448#510"    cd /Users/mchow/Documents/Development/ControlsFun    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/MainWindow.nib /Users/mchow/Documents/Development/ControlsFun/MainWindow.xib0#
-
-CGenerateDSYMFile /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app.dSYM /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun
-s283756020.534007
-e283756020.550304
-r1
-xGenerateDSYMFile
-x/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app.dSYM
-x/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun
-lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/ControlsFun.app.dSYM build/Debug-iphonesimulator/ControlsFun.app/ControlsFun283756020#283756020#0(0"0(0#0#102"/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun4300885448#419"    cd /Users/mchow/Documents/Development/ControlsFun    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun -o /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app.dSYM0#
-
-CLd /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun normal i386
-s283756020.511554
-e283756020.533882
-r1
-xLd
-x/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun
-xnormal
-xi386
-lSLF07#2@107"Link /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun283756020#283756020#0(0"0(0#0#0"4300885448#924"    cd /Users/mchow/Documents/Development/ControlsFun    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator -F/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator -filelist /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/Objects-normal/i386/ControlsFun.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/ControlsFun0#
-
-CProcessInfoPlistFile /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/Info.plist ControlsFun-Info.plist
-s283756018.916450
-e283756018.919758
-r1
-xProcessInfoPlistFile
-x/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/Info.plist
-xControlsFun-Info.plist
-lSLF07#2@30"Process ControlsFun-Info.plist283756018#283756018#0(0"0(0#0#69"/Users/mchow/Documents/Development/ControlsFun/ControlsFun-Info.plist4300885448#515"    cd /Users/mchow/Documents/Development/ControlsFun    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ControlsFun-Info.plist -genpkginfo /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app/Info.plist0#
-
-CProcessPCH /var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch.gch ControlsFun_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s283756019.363987
-e283756020.361649
-r1
-xProcessPCH
-x/var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch.gch
-xControlsFun_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@33"Precompile ControlsFun_Prefix.pch283756019#283756020#0(0"0(0#0#69"/Users/mchow/Documents/Development/ControlsFun/ControlsFun_Prefix.pch4300885448#1907"    cd /Users/mchow/Documents/Development/ControlsFun    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-generated-files.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-own-target-headers.hmap -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-all-target-headers.hmap -iquote /Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/ControlsFun-project-headers.hmap -F/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator -I/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/include -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources/i386 -I/Users/mchow/Documents/Development/ControlsFun/build/ControlsFun.build/Debug-iphonesimulator/ControlsFun.build/DerivedSources -c /Users/mchow/Documents/Development/ControlsFun/ControlsFun_Prefix.pch -o /var/folders/Rj/RjPZe4+hHMKsoEcQCzcj7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ControlsFun_Prefix-geuliixkckhfykaqhrklwbmmbcng/ControlsFun_Prefix.pch.gch0#
-
-CTouch /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app
-s283756020.550410
-e283756020.553583
-r1
-xTouch
-x/Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app
-lSLF07#2@96"Touch /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app283756020#283756020#0(0"0(0#0#0"4300885448#298"    cd /Users/mchow/Documents/Development/ControlsFun    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mchow/Documents/Development/ControlsFun/build/Debug-iphonesimulator/ControlsFun.app0#
-

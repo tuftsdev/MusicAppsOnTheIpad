@@ -1,722 +1,0 @@
-Tblocks
-v7
-r0
-t304565979.268271
-cCheck dependencies
-cCpResource build/Debug-iphoneos/blocks.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/Info.plist blocks-Info.plist
-cCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
-cCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
-cProcessPCH /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch.gch blocks_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch.gch blocks_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/main.o /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksAppDelegate.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksViewController.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/block.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/Ball.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/paddle.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blockyView.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/main.o /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksAppDelegate.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksViewController.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/block.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/Ball.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/paddle.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blockyView.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks normal armv7
-cLd /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks normal armv6
-cCreateUniversalBinary /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks normal "armv6 armv7"
-cGenerateDSYMFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app.dSYM /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks
-cProcessProductPackaging "/Users/ltgerbilmuffin/Library/MobileDevice/Provisioning Profiles/599A26D5-E7A6-4201-9D86-5A4A10550971.mobileprovision" /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/embedded.mobileprovision
-cTouch /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent
-cCodeSign /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk
-c000000004C05C1B10000000000000110
-t1275445681
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
-c000000004BF4B7F900000000000001A7
-t1274329081
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
-c000000004BF4B7F900000000000001E5
-t1274329081
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004BFE06FA000000000034A850
-t1274939130
-s3450960
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004BFE07D200000000003E1EB0
-t1274939346
-s4071088
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004BFE07B10000000000001466
-t1274939313
-s5222
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CADisplayLink.h
-c000000004C0458CD0000000000000870
-t1275353293
-s2160
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C04711400000000000009CD
-t1275359508
-s2509
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C0471FC0000000002D563E0
-t1275359740
-s47539168
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/math.h
-c000000004BF4BCB400000000000004F1
-t1274330292
-s1265
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m
-c000000004C7717560000000000000F73
-t1282873174
-s3955
-i"blockyView.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.h
-c000000004C7713AE00000000000002E3
-t1282872238
-s739
-i<Foundation/Foundation.h>
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m
-c000000004C77139E0000000000000445
-t1282872222
-s1093
-i"Ball.h"
-i<math.h>
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.h
-c000000004C756B380000000000000222
-t1282763576
-s546
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-i<math.h>
-i"Ball.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m
-c000000004C7714B80000000000000743
-t1282872504
-s1859
-i"block.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.h
-c000000004C687ABA00000000000001DE
-t1281915578
-s478
-i<UIKit/UIKit.h>
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m
-c000000004C7573740000000000000B32
-t1282765684
-s2866
-i"blocksAppDelegate.h"
-i"blocksViewController.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h
-c000000004C74E0960000000000000172
-t1282728086
-s370
-i<UIKit/UIKit.h>
-i<QuartzCore/CADisplayLink.h>
-i"Ball.h"
-i"blockyView.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m
-c000000004C770C5D00000000000008AB
-t1282870365
-s2219
-i"blocksViewController.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.h
-c000000004C7564DA0000000000000178
-t1282761946
-s376
-i<Foundation/Foundation.h>
-i"Ball.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m
-c000000004C7567080000000000000456
-t1282762504
-s1110
-i"paddle.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
-c000000004C687ABA0000000000004E1D
-t1281915578
-s19997
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
-c000000004C77146F0000000000003B1D
-t1282872431
-s15133
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch
-c000000004C687ABA00000000000000B5
-t1281915578
-s181
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/blockyView.h
-c000000004C7715DE0000000000000318
-t1282872798
-s792
-i<UIKit/UIKit.h>
-i"Ball.h"
-i"block.h"
-i"paddle.h"
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app
-t1282873179
-s374
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app.dSYM
-t1282873179
-s102
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/Info.plist
-t1282717508
-s749
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/MainWindow.nib
-t1282717509
-s1121
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/PkgInfo
-t1282717508
-s8
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/ResourceRules.plist
-t1282717508
-s485
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks
-t1282873179
-s105408
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocksViewController.nib
-t1282872434
-s875
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/embedded.mobileprovision
-t1282717516
-s7164
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/Ball.o
-t1282872260
-s18244
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/block.o
-t1282872508
-s16888
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks
-t1282873179
-s47140
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks.LinkFileList
-c000000004C74B7440000000000000383
-t1282717508
-s899
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksAppDelegate.o
-t1282872968
-s47488
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksViewController.o
-t1282872968
-s41868
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blockyView.o
-t1282873178
-s56164
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/main.o
-t1282717514
-s6456
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/paddle.o
-t1282872260
-s12008
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/Ball.o
-t1282872261
-s17224
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/block.o
-t1282872508
-s15488
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks
-t1282873178
-s42048
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks.LinkFileList
-c000000004C74B7440000000000000383
-t1282717508
-s899
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksAppDelegate.o
-t1282872968
-s47404
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksViewController.o
-t1282872968
-s41684
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blockyView.o
-t1282873178
-s54920
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/main.o
-t1282717515
-s6440
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/paddle.o
-t1282872261
-s10536
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent
-t1282717516
-s418
-
-N/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m
-c000000004C6896570000000000000196
-t1281922647
-s406
-i<UIKit/UIKit.h>
-
-N/Users/ltgerbilmuffin/Library/MobileDevice/Provisioning Profiles/599A26D5-E7A6-4201-9D86-5A4A10550971.mobileprovision
-c000000004C3513020000000000001BFC
-t1278546690
-s7164
-
-N/var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch.gch
-t1282717514
-s10290736
-
-N/var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch.gch
-t1282717514
-s9831984
-
-Nblocks-Info.plist
-c000000004C6AAADC00000000000003B4
-t1282058972
-s948
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies304565978#304565978#0(0"0(0#1#0"8620065248#0"0#
-
-CCodeSign /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app
-s304565979.067164
-e304565979.268220
-r1
-xCodeSign
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app
-lSLF07#2@40"CodeSign build/Debug-iphoneos/blocks.app304565979#304565979#0(0"0(0#0#79"/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app8601320736#680"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Benjamin Horn (27VCUT6E6E)" --resource-rules=/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/ResourceRules.plist --entitlements /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/Ball.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304565060.767937
-e304565060.895534
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/Ball.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m304565060#304565060#0(0"0(0#0#62"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m8616621280#1811"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/Ball.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/block.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304565308.120380
-e304565308.278819
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/block.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m304565308#304565308#0(0"0(0#0#63"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m8618302624#1813"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/block.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksAppDelegate.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304565768.090291
-e304565768.231740
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksAppDelegate.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,
-o                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:10:
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m: In function '-[blocksAppDelegate applicationWillResignActive:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: 'UIView' may not respond to '-setPaused:'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: (Messages without a matching method signature
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: will be assumed to return 'id' and accept
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: '...' as arguments.)
-lSLF07#2@83"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#304565768#0(1844"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:10:/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m: In function '-[blocksAppDelegate applicationWillResignActive:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: 'UIView' may not respond to '-setPaused:'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: (Messages without a matching method signature/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: will be assumed to return 'id' and accept/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: '...' as arguments.)8(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#207#163#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'ourblocks'304565768#370#167#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'ourblocks' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#537#163#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'theball'304565768#700#165#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@154"Assign attribute (default) not appropriate for non-gc object property 'theball' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#865#163#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'thepaddle'304565768#1028#167#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'thepaddle' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@41"'UIView' may not respond to '-setPaused:'304565768#1337#131#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#37#0#37#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)304565768#1468#135#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#37#0#37#0#0"0(0#0#75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m8620087968#1837"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksAppDelegate.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksViewController.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304565768.091373
-e304565768.232020
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksViewController.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,
-o                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:9:
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesBegan:withEvent:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: 'UIView' may not respond to '-thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: (Messages without a matching method signature
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: will be assumed to return 'id' and accept
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: '...' as arguments.)
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:40: warning: 'UIView' may not respond to '-takeSingleTap'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:42: warning: 'UIView' may not respond to '-takeDoubleTap'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:45: warning: 'UIView' may not respond to '-takeTripleTap'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesMoved:withEvent:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:51: warning: 'UIView' may not respond to '-thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController logic:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:74: warning: 'UIView' may not respond to '-physics:'
-lSLF07#2@86"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#304565768#0(2803"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:9:/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesBegan:withEvent:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: 'UIView' may not respond to '-thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: (Messages without a matching method signature/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: will be assumed to return 'id' and accept/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: '...' as arguments.)/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:40: warning: 'UIView' may not respond to '-takeSingleTap'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:42: warning: 'UIView' may not respond to '-takeDoubleTap'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:45: warning: 'UIView' may not respond to '-takeTripleTap'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesMoved:withEvent:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:51: warning: 'UIView' may not respond to '-thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController logic:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:74: warning: 'UIView' may not respond to '-physics:'13(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#209#163#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'ourblocks'304565768#372#167#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'ourblocks' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#539#163#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'theball'304565768#702#165#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@154"Assign attribute (default) not appropriate for non-gc object property 'theball' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#867#163#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'thepaddle'304565768#1030#167#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'thepaddle' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@40"'UIView' may not respond to '-thepaddle'304565768#1340#133#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#38#0#38#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)304565768#1473#138#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#38#0#38#0#0"0(22@44"'UIView' may not respond to '-takeSingleTap'304565768#1858#137#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#40#0#40#0#26"'*' may not respond to '*'0(22@44"'UIView' may not respond to '-takeDoubleTap'304565768#1995#137#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#42#0#42#0#26"'*' may not respond to '*'0(22@44"'UIView' may not respond to '-takeTripleTap'304565768#2132#137#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#45#0#45#0#26"'*' may not respond to '*'0(22@40"'UIView' may not respond to '-thepaddle'304565768#2412#133#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#51#0#51#0#26"'*' may not respond to '*'0(22@39"'UIView' may not respond to '-physics:'304565768#2671#132#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#74#0#74#0#26"'*' may not respond to '*'0(0#0#78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m8616987520#1843"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocksViewController.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blockyView.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304565978.746364
-e304565978.974411
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blockyView.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m:9:
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'
-lSLF07#2@79"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#304565978#0(1085"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m:9:/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565978#97#163#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'ourblocks'304565978#260#167#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'ourblocks' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565978#427#163#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'theball'304565978#590#165#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@154"Assign attribute (default) not appropriate for non-gc object property 'theball' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565978#755#163#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'thepaddle'304565978#918#167#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'thepaddle' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(0#0#71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m8619144160#1826"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blockyView.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/main.o /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304410314.743516
-e304410314.918300
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/main.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m304410314#304410314#0(0"0(0#0#54"/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m8600237152#1803"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/main.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/paddle.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304565060.872061
-e304565060.946287
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/paddle.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@72"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m304565060#304565060#0(0"0(0#0#64"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m8616675968#1815"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/paddle.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/Ball.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304565061.135377
-e304565061.233021
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/Ball.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m304565061#304565061#0(0"0(0#0#62"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m8612225504#1811"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/Ball.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/Ball.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/block.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304565308.279950
-e304565308.377391
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/block.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m304565308#304565308#0(0"0(0#0#63"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m8618677280#1813"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/block.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/block.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksAppDelegate.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304565768.283265
-e304565768.373165
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksAppDelegate.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,
-o                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:10:
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m: In function '-[blocksAppDelegate applicationWillResignActive:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: 'UIView' may not respond to '-setPaused:'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: (Messages without a matching method signature
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: will be assumed to return 'id' and accept
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: '...' as arguments.)
-lSLF07#2@83"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#304565768#0(1844"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:10:/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m: In function '-[blocksAppDelegate applicationWillResignActive:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: 'UIView' may not respond to '-setPaused:'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: (Messages without a matching method signature/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: will be assumed to return 'id' and accept/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m:37: warning: '...' as arguments.)8(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#207#163#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'ourblocks'304565768#370#167#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'ourblocks' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#537#163#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'theball'304565768#700#165#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@154"Assign attribute (default) not appropriate for non-gc object property 'theball' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#865#163#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'thepaddle'304565768#1028#167#3(7@97"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304565768#18446744073709551615#0#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#10#0#10#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'thepaddle' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@41"'UIView' may not respond to '-setPaused:'304565768#1337#131#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#37#0#37#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)304565768#1468#135#0(6@75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m304458484#37#0#37#0#0"0(0#0#75"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m8619375168#1837"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksAppDelegate.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksAppDelegate.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksViewController.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304565768.373292
-e304565768.471269
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksViewController.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,
-o                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:9:
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesBegan:withEvent:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: 'UIView' may not respond to '-thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: (Messages without a matching method signature
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: will be assumed to return 'id' and accept
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: '...' as arguments.)
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:40: warning: 'UIView' may not respond to '-takeSingleTap'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:42: warning: 'UIView' may not respond to '-takeDoubleTap'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:45: warning: 'UIView' may not respond to '-takeTripleTap'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesMoved:withEvent:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:51: warning: 'UIView' may not respond to '-thepaddle'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController logic:]':
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:74: warning: 'UIView' may not respond to '-physics:'
-lSLF07#2@86"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#304565768#0(2803"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h:12,                 from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:9:/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesBegan:withEvent:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: 'UIView' may not respond to '-thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: (Messages without a matching method signature/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: will be assumed to return 'id' and accept/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:38: warning: '...' as arguments.)/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:40: warning: 'UIView' may not respond to '-takeSingleTap'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:42: warning: 'UIView' may not respond to '-takeDoubleTap'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:45: warning: 'UIView' may not respond to '-takeTripleTap'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController touchesMoved:withEvent:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:51: warning: 'UIView' may not respond to '-thepaddle'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m: In function '-[blocksViewController logic:]':/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m:74: warning: 'UIView' may not respond to '-physics:'13(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#209#163#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'ourblocks'304565768#372#167#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'ourblocks' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#539#163#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'theball'304565768#702#165#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@154"Assign attribute (default) not appropriate for non-gc object property 'theball' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565768#867#163#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'thepaddle'304565768#1030#167#3(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#9#0#9#0#0"0(7@100"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304565768#18446744073709551615#0#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.h304420886#12#0#12#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'thepaddle' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565768#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@40"'UIView' may not respond to '-thepaddle'304565768#1340#133#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#38#0#38#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)304565768#1473#138#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#38#0#38#0#0"0(22@44"'UIView' may not respond to '-takeSingleTap'304565768#1858#137#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#40#0#40#0#26"'*' may not respond to '*'0(22@44"'UIView' may not respond to '-takeDoubleTap'304565768#1995#137#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#42#0#42#0#26"'*' may not respond to '*'0(22@44"'UIView' may not respond to '-takeTripleTap'304565768#2132#137#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#45#0#45#0#26"'*' may not respond to '*'0(22@40"'UIView' may not respond to '-thepaddle'304565768#2412#133#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#51#0#51#0#26"'*' may not respond to '*'0(22@39"'UIView' may not respond to '-physics:'304565768#2671#132#0(6@78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m304563165#74#0#74#0#26"'*' may not respond to '*'0(0#0#78"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m8617059680#1843"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/blocksViewController.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocksViewController.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blockyView.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304565978.805131
-e304565978.965395
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blockyView.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m:9:
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
-o/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'
-lSLF07#2@79"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#304565978#0(1085"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m:9:/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:27: warning: assign attribute (default) not appropriate for non-gc object property 'ourblocks'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:28: warning: assign attribute (default) not appropriate for non-gc object property 'theball'/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h:29: warning: assign attribute (default) not appropriate for non-gc object property 'thepaddle'6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565978#97#163#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'ourblocks'304565978#260#167#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'ourblocks' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#27#0#27#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565978#427#163#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'theball'304565978#590#165#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@154"Assign attribute (default) not appropriate for non-gc object property 'theball' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#28#0#28#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed304565978#755#163#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@152"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(22@81"Assign attribute (default) not appropriate for non-gc object property 'thepaddle'304565978#918#167#2(7@93"In file included from /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m304565974#9#0#9#0#0"0(13@156"Assign attribute (default) not appropriate for non-gc object property 'thepaddle' in /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565978#18446744073709551615#0#0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(6@71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.h304565598#29#0#29#0#0"0(0#0#71"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m8619804608#1826"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/../blockyView.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blockyView.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/main.o /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304410315.102949
-e304410315.158669
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/main.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m304410315#304410315#0(0"0(0#0#54"/Users/ltgerbilmuffin/Documents/Projects/blocks/main.m8609790816#1803"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/main.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/main.o0#
-
-CCompileC build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/paddle.o /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304565061.202875
-e304565061.275807
-r1
-xCompileC
-xbuild/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/paddle.o
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@72"Compile /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m304565061#304565061#0(0"0(0#0#64"/Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m8612790752#1815"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -include /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/Classes/paddle.m -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/paddle.o0#
-
-CCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
-s304410308.663698
-e304410310.121317
-r1
-xCompileXIB
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib304410308#304410310#0(0"0(0#0#62"/Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib8610000512#568"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/MainWindow.nib /Users/ltgerbilmuffin/Documents/Projects/blocks/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk0#
-
-CCompileXIB /Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
-s304565233.964368
-e304565234.320160
-r1
-xCompileXIB
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib
-lSLF07#2@35"CompileXIB blocksViewController.xib304565233#304565234#0(0"0(0#0#72"/Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib8615975968#588"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocksViewController.nib /Users/ltgerbilmuffin/Documents/Projects/blocks/blocksViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk0#
-
-CCpResource build/Debug-iphoneos/blocks.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
-s304410308.521398
-e304410308.663610
-r1
-xCpResource
-xbuild/Debug-iphoneos/blocks.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist304410308#304410308#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist8610527328#497"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app0#
-
-CCreateUniversalBinary /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks normal "armv6 armv7"
-s304565979.014718
-e304565979.018128
-r1
-xCreateUniversalBinary
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks
-xnormal
-xarmv6 armv7
-lSLF07#2@81"CreateUniversalBinary build/Debug-iphoneos/blocks.app/blocks normal "armv6 armv7"304565979#304565979#0(0"0(0#0#59"/Users/ltgerbilmuffin/Documents/Projects/blocks/armv6 armv78618425568#546"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks -output /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks0#
-
-CGenerateDSYMFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app.dSYM /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks
-s304565979.018215
-e304565979.064299
-r1
-xGenerateDSYMFile
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app.dSYM
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks
-lSLF07#2@92"GenerateDSYMFile build/Debug-iphoneos/blocks.app.dSYM build/Debug-iphoneos/blocks.app/blocks304565979#304565979#0(0"0(0#0#86"/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks8617054560#386"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/blocks -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app.dSYM0#
-
-CLd /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks normal armv6
-s304565978.974506
-e304565979.014625
-r1
-xLd
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks
-xnormal
-xarmv6
-lSLF07#2@127"Link /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks304565978#304565979#0(0"0(0#0#0"8615632544#898"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -L/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -filelist /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv6/blocks0#
-
-CLd /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks normal armv7
-s304565978.965739
-e304565979.005649
-r1
-xLd
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks
-xnormal
-xarmv7
-lSLF07#2@127"Link /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks304565978#304565979#0(0"0(0#0#0"8616767744#898"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -L/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -filelist /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/Objects-normal/armv7/blocks0#
-
-CProcessInfoPlistFile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/Info.plist blocks-Info.plist
-s304410308.522350
-e304410308.525594
-r1
-xProcessInfoPlistFile
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/Info.plist
-xblocks-Info.plist
-lSLF07#2@25"Process blocks-Info.plist304410308#304410308#0(0"0(0#0#65"/Users/ltgerbilmuffin/Documents/Projects/blocks/blocks-Info.plist8610129984#594"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility blocks-Info.plist -genpkginfo /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/ResourceRules.plist -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/Info.plist0#
-
-CProcessPCH /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch.gch blocks_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304410310.122825
-e304410314.743381
-r1
-xProcessPCH
-x/var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch.gch
-xblocks_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@28"Precompile blocks_Prefix.pch304410310#304410314#0(0"0(0#0#65"/Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch8614162944#1693"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv7 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -c /Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch -o /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-cuupyzdunedpeoeqcfdovbplmkvr/blocks_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch.gch blocks_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304410310.121537
-e304410314.689036
-r1
-xProcessPCH
-x/var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch.gch
-xblocks_Prefix.pch
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@28"Precompile blocks_Prefix.pch304410310#304410314#0(0"0(0#0#65"/Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch8609541248#1693"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-generated-files.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-own-target-headers.hmap -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-all-target-headers.hmap -iquote /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks-project-headers.hmap -F/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/include -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources/armv6 -I/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/DerivedSources -c /Users/ltgerbilmuffin/Documents/Projects/blocks/blocks_Prefix.pch -o /var/folders/xR/xRydUDf8HUau-TxQb4wm4E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/blocks_Prefix-elwcrbjjgbdamrbxtzxibgivqkyf/blocks_Prefix.pch.gch0#
-
-CProcessProductPackaging "/Users/ltgerbilmuffin/Library/MobileDevice/Provisioning Profiles/599A26D5-E7A6-4201-9D86-5A4A10550971.mobileprovision" /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/embedded.mobileprovision
-s304410316.455457
-e304410316.460326
-r1
-xProcessProductPackaging
-x/Users/ltgerbilmuffin/Library/MobileDevice/Provisioning Profiles/599A26D5-E7A6-4201-9D86-5A4A10550971.mobileprovision
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/embedded.mobileprovision
-lSLF07#2@200"ProcessProductPackaging "/Users/ltgerbilmuffin/Library/MobileDevice/Provisioning Profiles/599A26D5-E7A6-4201-9D86-5A4A10550971.mobileprovision" build/Debug-iphoneos/blocks.app/embedded.mobileprovision304410316#304410316#0(0"0(0#0#104"/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/embedded.mobileprovision8612970752#449"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/ltgerbilmuffin/Library/MobileDevice/Provisioning Profiles/599A26D5-E7A6-4201-9D86-5A4A10550971.mobileprovision" -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent
-s304410316.466801
-e304410316.489718
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent
-lSLF07#2@172"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent304410316#304410316#0(0"0(0#0#107"/Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent8610385088#447"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/ltgerbilmuffin/Documents/Projects/blocks/build/blocks.build/Debug-iphoneos/blocks.build/blocks.xcent0#
-
-CTouch /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app
-s304565979.064491
-e304565979.067006
-r1
-xTouch
-x/Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app
-lSLF07#2@85"Touch /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app304565979#304565979#0(0"0(0#0#0"8616191040#281"    cd /Users/ltgerbilmuffin/Documents/Projects/blocks    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ltgerbilmuffin/Documents/Projects/blocks/build/Debug-iphoneos/blocks.app0#
-
