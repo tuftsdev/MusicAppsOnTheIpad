@@ -5,24 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>EA70EA88-D1F8-4899-8436-9A6E7A12F79D</string>
+	<string>DA0AC0E5-D3FA-49DA-987D-3552660706F2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SimpleApp</string>
+	<string>TapTap</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EF0F00A75E51151C6D0565D90EBD364EC0D23DE0</key>
 		<string>github.com:tuftsdev/MusicAppsOnTheIpad</string>
-		<key>F36FBC3BCEA6F0EA4587CDFB59490231DC69897C</key>
-		<string>github.com:tuftsdev/MobileMedicalDevices.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>examples/ios_basics/SimpleApp/SimpleApp.xcodeproj</string>
+	<string>examples/gestures/TapTap/TapTap.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EF0F00A75E51151C6D0565D90EBD364EC0D23DE0</key>
 		<string>../../../../..</string>
-		<key>F36FBC3BCEA6F0EA4587CDFB59490231DC69897C</key>
-		<string>../../../../../../MobileMedicalDevices</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:tuftsdev/MusicAppsOnTheIpad</string>
@@ -32,14 +28,6 @@
 	<string>EF0F00A75E51151C6D0565D90EBD364EC0D23DE0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F36FBC3BCEA6F0EA4587CDFB59490231DC69897C</string>
-			<key>IDESourceControlWCCName</key>
-			<string>MobileMedicalDevices</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
