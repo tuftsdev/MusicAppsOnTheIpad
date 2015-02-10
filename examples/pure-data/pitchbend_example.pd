@@ -1,0 +1,186 @@
+#N canvas 228 148 908 488 10;
+#X obj 243 291 osc~;
+#X obj 243 266 +;
+#X floatatom 243 117 5 0 0 0 - - -;
+#X obj 243 204 mtof;
+#X floatatom 243 232 5 0 0 0 - - -;
+#X text 142 231 Frequency in Hz:;
+#X text 137 116 MIDI Note Number:;
+#X floatatom 377 81 5 0 0 0 - - -;
+#X obj 243 155 +;
+#X floatatom 301 197 5 0 0 0 - - -;
+#X floatatom 309 290 5 0 0 0 - - -;
+#X obj 243 395 dac~;
+#X obj 742 222 loadbang;
+#X obj 243 -4 loadbang;
+#X msg 243 19 60;
+#X text 344 292 Volume;
+#N canvas 135 26 1091 685 EXTERNAL_MIDI_CONTROLS 0;
+#X text 200 208 Read MIDI stream in from device:;
+#X text 49 247 Parse the MIDI stream into note \, pitchbend \, etc
+commands:;
+#X obj 397 248 midiparse;
+#X obj 397 207 midiin;
+#X obj 397 498 unpack f f;
+#X floatatom 397 528 5 0 0 0 - - -;
+#X floatatom 462 528 5 0 0 0 - - -;
+#X text 396 544 pitch;
+#X text 461 545 velocity;
+#X text 466 498 note on messages;
+#X obj 405 429 unpack f f;
+#X floatatom 405 459 5 0 0 0 - - -;
+#X floatatom 470 459 5 0 0 0 - - -;
+#X text 404 474 aftert;
+#X text 470 476 pitch;
+#X text 475 429 poly aftertouch messages;
+#X obj 414 366 unpack f f;
+#X floatatom 414 396 5 0 0 0 - - -;
+#X floatatom 479 396 5 0 0 0 - - -;
+#X text 413 411 value;
+#X text 479 411 ctrl nr;
+#X text 485 366 controller messages;
+#X floatatom 422 342 5 0 0 0 - - -;
+#X floatatom 431 320 5 0 0 0 - - -;
+#X floatatom 439 297 5 0 0 0 - - -;
+#X floatatom 448 274 5 0 0 0 - - -;
+#X text 461 342 program change;
+#X text 476 298 pitch bend;
+#X text 468 322 aftertouch;
+#X text 483 273 channel number;
+#X obj 330 563 s \$0-note;
+#X text 603 564 See http://www.instructables.com/id/What-is-MIDI/?ALLSTEPS
+or Wikipedia for more info on MIDI.;
+#X obj 657 466 s \$0-pitchbend;
+#X text 750 466 <- Send Pitchbend values;
+#X obj 657 326 - 64;
+#X msg 526 -16 88 127;
+#X msg 537 10 90 88;
+#X text 585 12 aftertouch/pitch pairs make poly aftertouch messages
+;
+#X text 587 38 controller val/ controller nr make control messages
+;
+#X text 580 -16 pitch/velocity pairs make noteon messages;
+#X msg 549 38 70 7;
+#X floatatom 560 66 5 0 0 0 - - -;
+#X text 606 65 program change message;
+#X floatatom 572 89 5 0 0 0 - - -;
+#X text 617 87 aftertouch;
+#X floatatom 583 115 5 0 0 0 - - -;
+#X text 628 113 pitch bend;
+#X floatatom 595 141 5 0 0 0 - - -;
+#X text 640 140 channel number (wraps around like n%16);
+#X obj 526 170 midiformat 1;
+#X text 604 170 argument is channel number;
+#X text 383 170 Simulate a MIDI Device:;
+#X floatatom 657 347 5 0 0 0 - - -;
+#X floatatom 657 388 5 0 0 0 - - -;
+#X obj 657 367 / 64;
+#X floatatom 784 387 5 0 0 0 - - -;
+#X text 712 367 Pitchbend Range (in semitones):;
+#X text 689 416 <- initially set to 12;
+#X obj 657 417 * 12;
+#X floatatom 657 442 5 0 0 0 - - -;
+#X text 211 563 Send Note Value ->;
+#X text 116 1 If you had a MIDI Device (like a USB keyboard) connected
+\, you could let it control your synth by connecting your implementation
+to MIDI messages. The [midiformat] object lets you simulate input from
+a MIDI device.;
+#X text 116 70 MIDI is only a protocol that lets you make your synth
+compatible with the majority of music devices out there. There's no
+requirement that your synth actually use "real" MIDI input for your
+implementation \, but if you design your patch well it is easy to add
+that functionality later.;
+#X text 627 238 MIDI Pitchbend values go from 0 to 127 \, with 64 being
+the center (no pitchbend). It is up to you to decide how this translates
+to your own pitchbend implementation. Typically synths will allow you
+to set a pitchbend range that is used to interpret input MIDI pitchbend
+messages.;
+#X connect 2 0 4 0;
+#X connect 2 1 10 0;
+#X connect 2 2 16 0;
+#X connect 2 3 22 0;
+#X connect 2 4 23 0;
+#X connect 2 5 24 0;
+#X connect 2 6 25 0;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 4 1 6 0;
+#X connect 5 0 30 0;
+#X connect 10 0 11 0;
+#X connect 10 1 12 0;
+#X connect 16 0 17 0;
+#X connect 16 1 18 0;
+#X connect 24 0 34 0;
+#X connect 34 0 52 0;
+#X connect 35 0 49 0;
+#X connect 36 0 49 1;
+#X connect 40 0 49 2;
+#X connect 41 0 49 3;
+#X connect 43 0 49 4;
+#X connect 45 0 49 5;
+#X connect 47 0 49 6;
+#X connect 49 0 2 0;
+#X connect 52 0 54 0;
+#X connect 53 0 58 0;
+#X connect 54 0 53 0;
+#X connect 55 0 58 1;
+#X connect 58 0 59 0;
+#X connect 59 0 32 0;
+#X restore 338 389 pd EXTERNAL_MIDI_CONTROLS;
+#X text 498 389 <- Click to see how to connect this to an external
+MIDI;
+#X text 835 389 device;
+#X obj 167 69 r \$0-note;
+#X obj 377 109 t b f;
+#X obj 301 222 t b f;
+#X text 416 109 <- Need to bang left inlet to trigger output after
+sending;
+#X text 770 109 the pitchbend value;
+#X obj 335 -43 vsl 30 100 -12 12 0 1 empty empty empty 0 -9 0 10 -132097
+-262144 -1 4950 1;
+#X msg 264 58 65;
+#X msg 278 79 69;
+#X floatatom 243 181 5 0 0 0 - - -;
+#X obj 403 40 r \$0-pitchbend;
+#X text 335 199 Pitchbend with Hz;
+#X text 411 82 Pitchbend with semitones;
+#X obj 309 267 r \$0-volume;
+#X msg 742 272 \; pd dsp 1 \; \$1-volume 0.3 \;;
+#X text 448 259 Automatically Turn DSP on \, set volume to 0.3 ->;
+#X obj 742 248 f \$0;
+#X obj 723 223 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 243 371 *~;
+#X obj 281 344 line~;
+#X msg 281 324 \$1 5;
+#X text 325 334 <- Add short (5 ms) ramp to avoid pops;
+#X text 14 6 Initialize with MIDI note 60 (C4) ->;
+#X connect 0 0 36 0;
+#X connect 1 0 0 0;
+#X connect 2 0 8 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 7 0 20 0;
+#X connect 8 0 27 0;
+#X connect 9 0 21 0;
+#X connect 10 0 38 0;
+#X connect 12 0 34 0;
+#X connect 13 0 14 0;
+#X connect 14 0 2 0;
+#X connect 19 0 2 0;
+#X connect 20 0 8 0;
+#X connect 20 1 8 1;
+#X connect 21 0 1 0;
+#X connect 21 1 1 1;
+#X connect 24 0 7 0;
+#X connect 25 0 2 0;
+#X connect 26 0 2 0;
+#X connect 27 0 3 0;
+#X connect 28 0 7 0;
+#X connect 31 0 10 0;
+#X connect 34 0 32 0;
+#X connect 35 0 34 0;
+#X connect 36 0 11 0;
+#X connect 36 0 11 1;
+#X connect 37 0 36 1;
+#X connect 38 0 37 0;
