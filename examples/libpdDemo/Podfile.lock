@@ -1,0 +1,10 @@
+PODS:
+  - libpd (0.7.0)
+
+DEPENDENCIES:
+  - libpd (~> 0.7)
+
+SPEC CHECKSUMS:
+  libpd: f9e63d090e284438826f9b2fdc0810dbb9889e6f
+
+COCOAPODS: 0.35.0

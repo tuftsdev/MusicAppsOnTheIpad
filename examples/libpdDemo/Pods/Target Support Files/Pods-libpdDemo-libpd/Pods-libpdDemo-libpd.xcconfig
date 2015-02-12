@@ -1,0 +1,1 @@
+PODS_LIBPDDEMO_LIBPD_OTHER_LDFLAGS = -framework "Foundation"
