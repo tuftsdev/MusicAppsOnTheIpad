@@ -168,6 +168,7 @@
 				TargetAttributes = {
 					365B195F1A841DEA0032444D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = WC8GK6LE4R;
 					};
 					365B19781A841DEA0032444D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -414,6 +415,7 @@
 				365B19851A841DEA0032444D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		365B19861A841DEA0032444D /* Build configuration list for PBXNativeTarget "SoundboardTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +424,7 @@
 				365B19881A841DEA0032444D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
