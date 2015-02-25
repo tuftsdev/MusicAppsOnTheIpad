@@ -61,7 +61,12 @@ static const AudioUnitElement kOutputElement = 0;
         return -1;
     }
 	[PdBase openAudioWithSampleRate:sampleRate inputChannels:(inputEnabled_ ? numChannels : 0) outputChannels:numChannels];
+    
+    // This is what turns DSP on initially:
+    
 	[PdBase computeAudio:YES];
+    
+    
 	self.active = wasActive;
 	return 0;
 }

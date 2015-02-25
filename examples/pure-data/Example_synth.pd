@@ -1,0 +1,766 @@
+#N canvas 398 23 1010 626 10;
+#X obj -183 -210 cnv 15 994 605 empty empty Interface: 340 18 1 18
+-249661 -66577 0;
+#X floatatom 245 47 5 0 0 0 - - -;
+#X text -116 15 Note On:;
+#X text -34 15 Note Off:;
+#X obj -32 67 s \$0-note;
+#X obj 245 66 s \$0-volume;
+#X text 257 5 Volume:;
+#X msg -130 34 60 127;
+#X msg -25 33 60 0;
+#X msg -83 34 60 30;
+#X obj 248 25 hsl 67 15 0 1 0 1 empty empty empty -2 -8 0 10 -952 -237178
+-1 4213 1;
+#X obj -175 -170 piano;
+#X obj -175 50 t a a;
+#X obj -175 72 print PIANO_CONTROLS;
+#X obj -175 -190 r \$0-piano;
+#X msg 609 -46 square;
+#X msg 580 -103 sine;
+#X msg 589 -84 triangle;
+#X obj 580 -3 s \$0-waveform;
+#X msg 597 -65 sawtooth;
+#X obj 667 -42 tgl 15 0 empty \$0-harmonics_set More_Harmonics 17 7
+0 10 -262144 -1 -1 0 1;
+#X msg 667 -24 harmonics \$1;
+#X obj 434 98 s \$0-synth;
+#X obj 247 98 bng 15 250 50 0 empty empty Kill_note 17 7 0 10 -203904
+-1 -1;
+#N canvas 0 22 1320 643 (subpatch) 0;
+#X array \$0-spectrum 512 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0;
+#X coords 0 1 511 -1 200 140 1;
+#X restore -171 243 graph;
+#X obj 626 323 cnv 15 160 72 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#N canvas 136 78 955 453 implementation 0;
+#X obj -162 -6 cnv 15 945 443 empty empty Synth: 30 30 1 20 -262144
+-66577 0;
+#X obj -14 357 dac~;
+#X obj -14 299 *~;
+#X obj 256 238 line~;
+#X msg 256 218 \$1 5;
+#X obj 309 83 r \$0-volume;
+#X text 16 356 <- Send audio to the speakers;
+#X text 130 396 Tufts Comp150 - Music Apps for the iPad -;
+#X text -22 388 <- Plot Spectrum;
+#X obj -14 29 r \$0-waveform;
+#X text 70 28 <- Set Waveform;
+#X obj 37 171 r \$0-synth;
+#N canvas 464 170 633 183 tables 0;
+#X obj 18 16 inlet;
+#X obj 18 131 outlet;
+#X obj 178 114 square_table;
+#X obj 18 57 sine_table;
+#X obj 124 95 sawtooth_table;
+#X obj 71 76 triangle_table;
+#X obj 18 38 route sine triangle sawtooth square harmonics;
+#X obj 231 61 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 285 101 list prepend Invalid waveform;
+#X obj 285 123 list append Valid options: sine triangle sawtooth square
+harmonics;
+#X obj 285 80 makefilename "%s".;
+#X obj 285 59 symbol;
+#X obj 285 158 lprint SYNTH_ERROR;
+#X connect 0 0 6 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;
+#X connect 6 0 3 0;
+#X connect 6 1 5 0;
+#X connect 6 2 4 0;
+#X connect 6 3 2 0;
+#X connect 6 4 7 0;
+#X connect 6 5 11 0;
+#X connect 7 0 2 1;
+#X connect 7 0 4 1;
+#X connect 7 0 5 1;
+#X connect 8 0 9 0;
+#X connect 9 0 12 0;
+#X connect 10 0 8 0;
+#X connect 11 0 10 0;
+#X restore -14 55 pd tables;
+#N canvas 835 403 230 360 polyphonic_synth 0;
+#X obj 38 92 key;
+#X obj 38 113 sel 8;
+#X obj 7 9 r \$0-note;
+#X obj 28 50 r \$0-adsr_vol;
+#X floatatom 38 250 5 0 0 1 Number_of_Current_Voices - #0-poly_num_voices
+;
+#X obj 7 270 outlet~;
+#X obj 7 193 synth~ ____;
+#X obj 70 173 tgl 15 0 empty empty Print_ADSR_Messages 17 7 0 10 -262144
+-1 -1 0 1;
+#X floatatom 49 134 5 0 0 1 Pitchbend #0-pitchbend -;
+#X floatatom 59 154 5 0 0 1 Pitchbend_Range #0-pitchbend_range -;
+#X text 73 114 delete (flush notes);
+#X obj 70 213 tgl 15 0 empty \$0-poly_on_off On/Off 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 70 231 switch~;
+#X obj 17 29 inlet WAVETABLE;
+#X obj 38 71 r \$0-flush;
+#X connect 0 0 1 0;
+#X connect 1 0 6 3;
+#X connect 2 0 6 0;
+#X connect 3 0 6 2;
+#X connect 6 0 5 0;
+#X connect 6 1 4 0;
+#X connect 6 2 11 0;
+#X connect 7 0 6 6;
+#X connect 8 0 6 4;
+#X connect 9 0 6 5;
+#X connect 11 0 12 0;
+#X connect 13 0 6 1;
+#X connect 14 0 6 3;
+#X restore 3 112 pd polyphonic_synth;
+#N canvas 341 92 1015 259 monophonic_synth 0;
+#X obj 341 92 mtof;
+#X obj 341 198 *~;
+#X text 206 90 Convert MIDI to Hz ->;
+#X obj 341 168 tabosc4~;
+#X text 224 196 ADSR Multiplier ->;
+#X obj 515 102 r \$0-adsr_vol;
+#X obj 341 223 outlet~;
+#X obj 140 19 inlet WAVEFORM_TABLE;
+#X obj 140 40 list prepend set;
+#X obj 140 60 list trim;
+#X obj 461 31 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 488 77 r \$0-velocity;
+#X msg 409 164 kill;
+#X msg 461 50 print \$1;
+#X obj 409 143 r \$0-flush;
+#X obj 341 69 r \$0-pitch;
+#X text -11 167 Waveform (reading from tables defined in parent patch)
+->;
+#X text 231 68 Get MIDI Pitch ->;
+#X msg 538 130 help;
+#X msg 538 151 methods;
+#X text 573 77 <- Get velocity;
+#X text 600 102 <- Get list of ADSR coefficients;
+#X text 571 129 <- Click to print ADSR help info;
+#X text 587 152 <- Click to print [adsr] methods;
+#X text -51 60 Get rid of "list" identifier ->;
+#X text -11 17 Get name of wavetable ->;
+#X text -172 39 Prepend wavetable name with "set" for [tabosc4~] ->
+;
+#X text 379 125 Kill all notes:;
+#X text 480 29 <- Toggle printing of note-on & note-off messages;
+#X obj 488 181 adsr~;
+#X connect 0 0 3 0;
+#X connect 1 0 6 0;
+#X connect 3 0 1 0;
+#X connect 5 0 29 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 3 0;
+#X connect 10 0 13 0;
+#X connect 11 0 29 0;
+#X connect 12 0 29 0;
+#X connect 13 0 29 0;
+#X connect 14 0 12 0;
+#X connect 15 0 0 0;
+#X connect 18 0 29 0;
+#X connect 19 0 29 0;
+#X connect 29 0 1 1;
+#X restore -14 91 pd monophonic_synth;
+#N canvas 279 76 364 201 spectrum 0;
+#X obj 8 3 inlet~;
+#X obj 8 171 autospectrum~ \$0-spectrum;
+#X obj 29 26 loadfloat 8192;
+#X obj 87 106 loadfloat 2;
+#X obj 59 66 loadfloat 10;
+#X obj 37 45 r \$0-spectrum_nfft;
+#X obj 66 86 r \$0-spectrum_gain;
+#X obj 96 126 r \$0-spectrum_zoom;
+#X obj 155 147 r \$0-spectrum_framerate;
+#X connect 0 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 3;
+#X connect 4 0 1 2;
+#X connect 5 0 1 1;
+#X connect 6 0 1 2;
+#X connect 7 0 1 3;
+#X connect 8 0 1 5;
+#X restore -96 388 pd spectrum;
+#X text 382 396 Pd Synth Lab - Example Solution;
+#X text -113 108 Synthesizers ->;
+#X text -122 200 Synth Selector ->;
+#X text -122 231 Lowpass Filter ->;
+#N canvas 286 23 346 188 lowpass 0;
+#X obj 12 -414 inlet~;
+#X obj 12 -272 outlet~;
+#X obj 57 -414 r \$0-filter_center;
+#X obj 12 -379 lop~ 500;
+#X obj 12 -359 lop~ 500;
+#X obj 12 -339 lop~ 500;
+#X obj 12 -319 lop~ 500;
+#X obj 12 -299 lop~ 500;
+#X text 80 -349 <- "Fifth Order" Lowpass Filter;
+#X connect 0 0 3 0;
+#X connect 2 0 3 1;
+#X connect 2 0 4 1;
+#X connect 2 0 5 1;
+#X connect 2 0 6 1;
+#X connect 2 0 7 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 1 0;
+#X restore -14 232 pd lowpass;
+#X text 47 54 <- Waveforms;
+#N canvas 545 96 505 451 effects 0;
+#X obj 13 15 inlet~;
+#X obj 13 427 outlet~;
+#X obj 52 407 outlet~;
+#X obj 13 135 chorus~;
+#X obj 52 90 r \$0-chorus;
+#X obj 13 62 multidelay~;
+#X obj 76 15 r \$0-delay;
+#X obj 13 183 multitremolo~;
+#X obj 88 139 r \$0-tremolo;
+#X obj 13 377 panner~;
+#X obj 52 335 r \$0-panner;
+#X obj 71 208 r \$0-reverb;
+#X obj 13 266 freeverb~;
+#X obj 72 230 loadmess bypass 1;
+#X text 182 230 <- Off by default;
+#X text 161 85 Note that the order is important with audio effects.
+;
+#X text 381 265 iOS app.;
+#X msg 86 37 help;
+#X msg 124 38 methods;
+#X text 172 37 <- Click for more info;
+#X msg 65 111 help;
+#X msg 103 112 methods;
+#X msg 94 161 help;
+#X msg 132 161 methods;
+#X msg 69 355 help;
+#X msg 107 355 methods;
+#X text 75 265 [freeverb~] is GPL Licensed & cannot be used in an;
+#X connect 0 0 5 0;
+#X connect 3 0 7 0;
+#X connect 4 0 3 1;
+#X connect 5 0 3 0;
+#X connect 6 0 5 1;
+#X connect 7 0 12 0;
+#X connect 7 0 12 1;
+#X connect 8 0 7 1;
+#X connect 9 0 1 0;
+#X connect 9 1 2 0;
+#X connect 10 0 9 2;
+#X connect 11 0 12 0;
+#X connect 12 0 9 0;
+#X connect 12 1 9 1;
+#X connect 13 0 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 5 1;
+#X connect 20 0 3 1;
+#X connect 21 0 3 1;
+#X connect 22 0 7 1;
+#X connect 23 0 7 1;
+#X connect 24 0 9 2;
+#X connect 25 0 9 2;
+#X restore -14 263 pd effects;
+#X obj 43 298 *~;
+#X obj 20 133 noise~;
+#X obj 274 346 writesf~ 2;
+#X obj 274 318 r \$0-audiofile;
+#X obj 229 34 r \$0-pan;
+#X obj 175 238 line~;
+#X msg 175 217 \$1 5;
+#X obj 229 86 t f f;
+#X obj 229 146 -;
+#X obj 229 115 swap 1;
+#X obj 229 178 *;
+#X obj 256 178 *;
+#X obj 309 146 t b f;
+#X obj 229 60 clip 0 1;
+#X obj 309 114 clip 0 1;
+#X text 287 33 <- Set Pan (.5 is middle);
+#X text 382 83 <- Set Volume;
+#X text 103 171 <- Switch Synths;
+#N canvas 756 25 552 298 FILTER_ADSR 0;
+#X obj 99 179 *~ 1;
+#X obj 99 36 r \$0-velocity;
+#X obj 81 92 route on;
+#X obj 99 205 view~;
+#X obj 48 236 spigot;
+#X text 169 260 <- Send to slider (for visual feedback);
+#X text 130 178 <- Set maximum filter frequency (velocity == 127);
+#X obj 81 62 r \$0-adsr_filter;
+#X obj 48 260 s \$0-filter_control;
+#X obj 120 154 r \$0-adsr_filter_depth;
+#X text 56 8 ADSR Triggered by note-on velocity;
+#X text 184 34 <- Get velocity of recently played note;
+#X text 185 63 <- Get ADSR Commands;
+#X text 92 236 <- Turn filter adsr on/off;
+#X obj 99 124 adsr~;
+#X text 135 91 <- Create "on" method;
+#X text 135 123 <- Left inlet: velocity \, Right inlet: ADSR coefficients
+;
+#X text 136 204 <- Convert Signal to float ([lop~] doesn't have signal
+;
+#X text 465 204 controls);
+#X connect 0 0 3 0;
+#X connect 1 0 14 0;
+#X connect 2 0 4 1;
+#X connect 2 1 14 1;
+#X connect 3 0 4 0;
+#X connect 4 0 8 0;
+#X connect 7 0 2 0;
+#X connect 9 0 0 1;
+#X connect 14 0 0 0;
+#X restore 449 270 pd FILTER_ADSR;
+#X obj -14 201 gswitch3~;
+#X text 133 415 Uses patches from Pd-for-LibPd:;
+#X text 326 415 https://github.com/cpenny42/Pd-for-LibPd;
+#X text 281 179 <- Multiply pan by volume to get final volume multipliers
+;
+#X text 63 134 <- White Noise;
+#X obj 506 35 unpack 0 0;
+#X obj 506 8 r \$0-note;
+#X obj 563 60 s \$0-velocity;
+#X obj 506 84 s \$0-pitch;
+#X text 568 7 <- Get Pitch & Velocity list;
+#X text 575 34 <- Unpack to get individual values;
+#X text 572 84 <- Send MIDI pitch;
+#X text 649 61 <- Send MIDI Velocity;
+#X text 346 146 <- Set value in right inlet \, bang left inlet for
+output;
+#X text 284 61 <- Restrict between 0 and 1;
+#X text 265 86 pan;
+#X text 182 85 1 - pan;
+#X text 297 225 <- Add short (5 ms) ramp to avoid pops;
+#X text 362 114 <- Restrict between 0 and 1;
+#X text 342 346 <- Write audio file (see help for [writesf~] for more
+info);
+#X obj -14 329 cleanup~;
+#X text 41 327 <- Normalize \, Remove DC Offset;
+#X text 366 317 <- Receive commands for [writesf~];
+#X text 540 270 <- Filter ADSR Implementation;
+#X text -146 297 Volume Multipliers ->;
+#X text -157 262 Stereo Effects Chain ->;
+#X text 575 396 - Lab Cancelled due to Snow;
+#X connect 2 0 62 0;
+#X connect 3 0 23 1;
+#X connect 4 0 3 0;
+#X connect 5 0 37 0;
+#X connect 9 0 12 0;
+#X connect 11 0 42 3;
+#X connect 12 0 14 0;
+#X connect 12 0 13 0;
+#X connect 13 0 42 1;
+#X connect 14 0 42 0;
+#X connect 20 0 22 0;
+#X connect 22 0 2 0;
+#X connect 22 1 23 0;
+#X connect 23 0 62 1;
+#X connect 24 0 42 2;
+#X connect 26 0 25 0;
+#X connect 27 0 36 0;
+#X connect 28 0 2 1;
+#X connect 29 0 28 0;
+#X connect 30 0 32 0;
+#X connect 30 1 34 0;
+#X connect 31 0 33 0;
+#X connect 32 0 31 0;
+#X connect 32 1 31 1;
+#X connect 33 0 29 0;
+#X connect 34 0 4 0;
+#X connect 35 0 34 0;
+#X connect 35 0 33 0;
+#X connect 35 1 34 1;
+#X connect 35 1 33 1;
+#X connect 36 0 30 0;
+#X connect 37 0 35 0;
+#X connect 42 0 20 0;
+#X connect 47 0 50 0;
+#X connect 47 1 49 0;
+#X connect 48 0 47 0;
+#X connect 62 0 1 0;
+#X connect 62 0 15 0;
+#X connect 62 0 25 0;
+#X connect 62 1 1 1;
+#X connect 62 1 25 1;
+#X restore 654 362 pd implementation;
+#X obj 557 121 s \$0-piano;
+#X msg 557 101 legato \$1;
+#X text 153 362 Tufts Comp150 - Music Apps for the iPad -;
+#X floatatom 30 340 5 0 0 1 Spectrum_Gain #0-spectrum_gain_set #0-spectrum_gain
+;
+#X floatatom 30 322 5 1 50 1 Zoom #0-spectrum_zoom_set #0-spectrum_zoom
+;
+#X floatatom 30 304 5 0 0 1 NFFT #0-spectrum_nfft_set #0-spectrum_nfft
+;
+#X floatatom 30 358 5 0 1e+10 1 Framerate #0-spectrum_framerate_set
+#0-spectrum_framerate;
+#X obj -159 205 s \$0-adsr_vol;
+#X text 633 -137 Waveforms:;
+#X obj 131 242 hsl 150 15 0 22000 0 1 empty empty Freq_Depth 55 8 0
+10 -33289 -228856 -262144 11800 1;
+#N canvas 262 387 368 315 vol-adsr 0;
+#X obj 103 101 hsl 150 15 1 5000 0 1 empty empty Attack 65 8 0 10 -262144
+-1 -1 0 1;
+#X obj 103 116 hsl 150 15 1 5000 0 1 empty empty Decay 68 8 0 10 -249661
+-1 -1 557 1;
+#X obj 103 131 hsl 150 15 0 1 0 1 empty empty Sustain 62 8 0 10 -257983
+-1 -1 5000 1;
+#X obj 103 146 hsl 150 15 0 10000 0 1 empty empty Release 63 8 0 10
+-228856 -1 -1 1100 1;
+#X obj 100 209 pack 0 0 0 0;
+#X obj 111 183 t b f;
+#X obj 153 184 t b f;
+#X obj 198 185 t b f;
+#X obj 100 247 outlet ADSR_list;
+#X obj 55 36 loadbang;
+#X obj 28 -19 inlet GUI_COMMANDS;
+#X obj 28 4 route adsr attack decay sustain release;
+#X obj 28 64 unpack 0 0 0 0;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 4 0;
+#X connect 5 1 4 1;
+#X connect 6 0 4 0;
+#X connect 6 1 4 2;
+#X connect 7 0 4 0;
+#X connect 7 1 4 3;
+#X connect 9 0 0 0;
+#X connect 9 0 1 0;
+#X connect 9 0 2 0;
+#X connect 9 0 3 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 11 1 0 0;
+#X connect 11 2 1 0;
+#X connect 11 3 2 0;
+#X connect 11 4 3 0;
+#X connect 12 0 0 0;
+#X connect 12 1 1 0;
+#X connect 12 2 2 0;
+#X connect 12 3 3 0;
+#X coords 0 -1 1 1 156 62 2 100 100;
+#X restore -159 139 pd vol-adsr;
+#X obj 128 159 guiadsr;
+#X text 405 362 Pd Synth Lab - Example Solution;
+#X obj 56 26 hsl 150 25 0 22050 0 0 empty \$0-filter_control empty
+-2 -8 0 10 -228856 -1 -1 2027 0;
+#X text 64 7 Filter Cutoff:;
+#X obj 53 64 s \$0-filter_center;
+#X text -146 119 Volume ADSR:;
+#X text 141 142 Filter ADSR:;
+#X obj 666 -118 bng 15 250 50 0 empty empty Sine 17 7 0 10 -262144
+-1 -1;
+#X obj 666 -99 bng 15 250 50 0 empty empty Triangle 17 7 0 10 -262144
+-1 -1;
+#X obj 667 -80 bng 15 250 50 0 empty empty Sawtooth 17 7 0 10 -262144
+-1 -1;
+#X obj 667 -61 bng 15 250 50 0 empty empty Square 17 7 0 10 -262144
+-1 -1;
+#X msg 667 104 speed \$1;
+#X floatatom 667 85 5 0 0 0 - - -;
+#X msg 630 104 play;
+#N canvas 612 22 393 308 INIT 0;
+#X obj 17 22 bng 15 250 50 0 empty empty Initialize: 17 7 0 10 -128992
+-257985 -1;
+#X obj 17 40 f \$0;
+#X obj 17 2 loadbang;
+#X msg 17 59 \; pd dsp 1 \; \$1-volume 0.5 \; \$1-filter_control 3000
+\; \$1-piano keys 1 \; \$1-spectrum_gain_set 100 \; \$1-spectrum_nfft_set
+4096 \; \$1-spectrum_zoom_set 4 \; \$1-gui_adsr_filter_set adsr 100
+100 0 1 \; \$1-waveform sawtooth \; \$1-synth 2 \;;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X restore 718 338 pd INIT;
+#N canvas 364 206 571 288 effects_controller 0;
+#X obj 39 76 hsl 133 15 0 6 0 1 empty empty Rate 57 8 0 10 -262144
+-1 -1 400 0;
+#X obj 39 91 hsl 64 15 0 2 0 1 empty empty Depth 20 8 0 10 -262144
+-1 -1 4500 0;
+#X obj 108 91 hsl 64 15 0 100 0 1 empty empty Mix 20 8 0 10 -262144
+-1 -1 3200 0;
+#X obj 6 76 tgl 30 0 empty empty On 10 14 0 10 -262144 -1 -1 0 1;
+#X text 6 58 CHORUS:;
+#X obj 39 22 hsl 133 15 0 4000 0 1 empty empty Delay 50 8 0 10 -262144
+-1 -1 13100 0;
+#X obj 39 37 hsl 64 15 0 1.1 0 1 empty empty Feedback 10 8 0 10 -262144
+-1 -1 1500 0;
+#X obj 108 37 hsl 64 15 0 1 0 1 empty empty Mix 20 8 0 10 -262144 -1
+-1 5700 0;
+#X obj 6 22 tgl 30 0 empty empty On 10 14 0 10 -262144 -1 -1 0 1;
+#X text 6 4 DELAY:;
+#X obj 39 132 hsl 133 15 0 50 0 1 empty empty Rate 50 8 0 10 -262144
+-1 -1 3800 0;
+#X obj 39 147 hsl 64 15 0 1 0 1 empty empty Depth 15 8 0 10 -262144
+-1 -1 6300 0;
+#X obj 108 147 hsl 64 15 0 3 0 1 empty empty Shape 20 8 0 10 -262144
+-1 -1 0 0;
+#X obj 6 132 tgl 30 0 empty empty On 10 14 0 10 -262144 -1 -1 0 1;
+#X text 6 114 TREMOLO:;
+#X obj 219 22 hsl 133 15 0 1.1 0 1 empty empty Roomsize 45 8 0 10 -262144
+-1 -1 4700 0;
+#X obj 219 37 hsl 133 15 0 1 0 1 empty empty Damping 47 8 0 10 -262144
+-1 -1 300 0;
+#X obj 219 52 hsl 133 15 0 1 0 1 empty empty Width 50 8 0 10 -262144
+-1 -1 13200 0;
+#X obj 219 67 hsl 133 15 0 1 0 1 empty empty Wet 50 8 0 10 -262144
+-1 -1 5800 0;
+#X obj 219 82 hsl 133 15 0 1 0 1 empty empty Dry 50 8 0 10 -262144
+-1 -1 6100 0;
+#X obj 339 97 tgl 15 0 empty empty Freeze: -43 7 0 10 -262144 -1 -1
+0 1;
+#X obj 186 22 tgl 30 0 empty empty On 10 14 0 10 -262144 -1 -1 0 1
+;
+#X text 186 4 REVERB:;
+#X obj 220 133 hsl 133 15 0 50 0 1 empty empty Rate 50 8 0 10 -262144
+-1 -1 1600 0;
+#X obj 187 133 tgl 30 0 empty empty On 10 14 0 10 -262144 -1 -1 0 1
+;
+#X obj 220 148 hsl 133 15 0 1 0 1 empty empty Depth 48 8 0 10 -262144
+-1 -1 13200 0;
+#X text 187 115 PANNER:;
+#X obj -4 248 s \$0-chorus;
+#X obj 94 248 s \$0-delay;
+#X obj 176 250 s \$0-tremolo;
+#X obj 285 252 s \$0-panner;
+#X msg -8 188 on \$1;
+#X msg 31 188 rate \$1;
+#X msg -3 208 depth \$1;
+#X msg 5 228 mix \$1;
+#X msg 91 189 on \$1;
+#X msg 104 229 mix \$1;
+#X msg 96 209 feedback \$1;
+#X msg 130 189 delay \$1;
+#X msg 192 188 on \$1;
+#X msg 231 188 rate \$1;
+#X msg 197 208 depth \$1;
+#X msg 205 228 shape \$1;
+#X msg 287 206 on \$1;
+#X msg 326 206 rate \$1;
+#X msg 292 226 depth \$1;
+#X obj 406 250 s \$0-reverb;
+#X msg 406 220 bypass \$1;
+#X obj 406 200 == 0;
+#X msg 405 174 roomsize \$1;
+#X msg 443 195 damping \$1;
+#X msg 475 221 width \$1;
+#X msg 415 153 wet \$1;
+#X msg 464 153 dry \$1;
+#X msg 430 129 freeze \$1;
+#X connect 0 0 32 0;
+#X connect 1 0 33 0;
+#X connect 2 0 34 0;
+#X connect 3 0 31 0;
+#X connect 5 0 38 0;
+#X connect 6 0 37 0;
+#X connect 7 0 36 0;
+#X connect 8 0 35 0;
+#X connect 10 0 40 0;
+#X connect 11 0 41 0;
+#X connect 12 0 42 0;
+#X connect 13 0 39 0;
+#X connect 15 0 49 0;
+#X connect 16 0 50 0;
+#X connect 17 0 51 0;
+#X connect 18 0 52 0;
+#X connect 19 0 53 0;
+#X connect 20 0 54 0;
+#X connect 21 0 48 0;
+#X connect 23 0 44 0;
+#X connect 24 0 43 0;
+#X connect 25 0 45 0;
+#X connect 31 0 27 0;
+#X connect 32 0 27 0;
+#X connect 33 0 27 0;
+#X connect 34 0 27 0;
+#X connect 35 0 28 0;
+#X connect 36 0 28 0;
+#X connect 37 0 28 0;
+#X connect 38 0 28 0;
+#X connect 39 0 29 0;
+#X connect 40 0 29 0;
+#X connect 41 0 29 0;
+#X connect 42 0 29 0;
+#X connect 43 0 30 0;
+#X connect 44 0 30 0;
+#X connect 45 0 30 0;
+#X connect 47 0 46 0;
+#X connect 48 0 47 0;
+#X connect 49 0 46 0;
+#X connect 50 0 46 0;
+#X connect 51 0 46 0;
+#X connect 52 0 46 0;
+#X connect 53 0 46 0;
+#X connect 54 0 46 0;
+#X coords 0 -1 1 1 360 170 2 0 0;
+#X restore 339 153 pd effects_controller;
+#X obj 128 275 s \$0-adsr_filter;
+#X obj 135 294 s \$0-adsr_filter_depth;
+#X text 342 134 Audio Effects:;
+#N canvas 818 130 519 579 METHODS 0;
+#X obj 31 35 r \$0-main;
+#X obj 31 551 s \$0-note;
+#X obj 65 532 s \$0-waveform;
+#X obj 100 513 s \$0-volume;
+#X obj 134 494 s \$0-piano;
+#X obj 169 418 route center adsr;
+#X obj 218 456 s \$0-adsr_filter_set;
+#X obj 169 475 s \$0-filter_center;
+#N canvas 577 392 308 162 error 0;
+#X obj 36 44 inlet;
+#X obj 36 88 list prepend unknown message for "filter":;
+#X obj 36 117 lprint MAIN_ERROR;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X restore 268 437 pd error;
+#X obj 203 273 route chorus delay tremolo reverb panner;
+#X obj 203 388 s \$0-chorus;
+#X obj 250 369 s \$0-delay;
+#X obj 297 350 s \$0-tremolo;
+#X obj 345 331 s \$0-reverb;
+#X obj 392 312 s \$0-panner;
+#N canvas 577 392 322 159 error 0;
+#X obj 36 44 inlet;
+#X obj 36 88 list prepend unknown message for "effect":;
+#X obj 36 117 lprint MAIN_ERROR;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X restore 440 293 pd error;
+#X obj 238 243 s \$0-kill;
+#X obj 272 224 s \$0-synth;
+#X obj 307 205 s \$0-midi;
+#X obj 307 148 route play stop;
+#X obj 350 186 s \$0-midi-stop;
+#N canvas 577 392 322 159 error 0;
+#X obj 36 44 inlet;
+#X obj 36 88 list prepend unknown message for "midi":;
+#X obj 36 117 lprint MAIN_ERROR;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X restore 394 167 pd error;
+#N canvas 577 392 322 159 error 0;
+#X obj 36 44 inlet;
+#X obj 36 88 list prepend unknown message:;
+#X obj 36 117 lprint MAIN_ERROR;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X restore 376 110 pd error;
+#X obj 31 78 route note wave volume piano filter effect kill synth
+midi adsr;
+#X obj 341 129 s \$0-adsr-vol;
+#X connect 0 0 23 0;
+#X connect 5 0 7 0;
+#X connect 5 1 6 0;
+#X connect 5 2 8 0;
+#X connect 9 0 10 0;
+#X connect 9 1 11 0;
+#X connect 9 2 12 0;
+#X connect 9 3 13 0;
+#X connect 9 4 14 0;
+#X connect 9 5 15 0;
+#X connect 19 0 18 0;
+#X connect 19 1 20 0;
+#X connect 19 2 21 0;
+#X connect 23 0 1 0;
+#X connect 23 1 2 0;
+#X connect 23 2 3 0;
+#X connect 23 3 4 0;
+#X connect 23 4 5 0;
+#X connect 23 5 9 0;
+#X connect 23 6 16 0;
+#X connect 23 7 17 0;
+#X connect 23 8 19 0;
+#X connect 23 9 24 0;
+#X connect 23 10 22 0;
+#X restore 647 338 pd METHODS;
+#X obj 131 258 hsl 150 15 0 22000 0 1 empty empty Freq_level 55 8 0
+10 -99865 -262144 -262144 11800 1;
+#X obj 150 313 s \$0-adsr_filter_level;
+#X obj 450 46 bng 15 250 50 0 empty empty Noise 17 7 0 10 -128992 -1
+-1;
+#X obj 344 25 hsl 67 15 0 1 0 1 empty empty empty -2 -8 0 10 -14109
+-237178 -1 3300 1;
+#X obj 247 116 s \$0-flush;
+#X text 353 5 Pan:;
+#X obj 29 104 r \$0-gui_adsr_filter_set;
+#X obj 341 67 s \$0-pan;
+#X floatatom 341 47 5 0 0 0 - - -;
+#X obj -159 100 r \$0-gui_adsr_vol_set;
+#X obj 29 123 route level depth;
+#X msg 434 67 1;
+#X obj 450 30 bng 15 250 50 0 empty empty Polyphonic 17 7 0 10 -128992
+-1 -1;
+#X obj 450 15 bng 15 250 50 0 empty empty Monophonic 17 7 0 10 -128992
+-1 -1;
+#X msg 442 67 2;
+#X msg 450 67 3;
+#X obj 516 84 == 1;
+#X text 272 377 Lab Cancelled due to Snow;
+#X connect 1 0 5 0;
+#X connect 7 0 4 0;
+#X connect 8 0 4 0;
+#X connect 9 0 4 0;
+#X connect 10 0 1 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 12 1 4 0;
+#X connect 14 0 11 0;
+#X connect 15 0 18 0;
+#X connect 16 0 18 0;
+#X connect 17 0 18 0;
+#X connect 19 0 18 0;
+#X connect 20 0 21 0;
+#X connect 21 0 18 0;
+#X connect 23 0 62 0;
+#X connect 28 0 27 0;
+#X connect 36 0 55 0;
+#X connect 37 0 34 0;
+#X connect 38 0 54 0;
+#X connect 40 0 42 0;
+#X connect 45 0 16 0;
+#X connect 46 0 17 0;
+#X connect 47 0 19 0;
+#X connect 48 0 15 0;
+#X connect 49 0 27 0;
+#X connect 50 0 49 0;
+#X connect 51 0 27 0;
+#X connect 58 0 59 0;
+#X connect 60 0 73 0;
+#X connect 61 0 66 0;
+#X connect 64 0 68 0;
+#X connect 66 0 65 0;
+#X connect 67 0 37 0;
+#X connect 68 0 58 0;
+#X connect 68 1 36 0;
+#X connect 68 2 38 0;
+#X connect 69 0 22 0;
+#X connect 69 0 74 0;
+#X connect 70 0 72 0;
+#X connect 71 0 69 0;
+#X connect 72 0 22 0;
+#X connect 72 0 74 0;
+#X connect 73 0 22 0;
+#X connect 74 0 28 0;
