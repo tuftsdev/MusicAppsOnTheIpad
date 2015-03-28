@@ -1,0 +1,46 @@
+#N canvas 279 214 569 507 10;
+#X obj 387 428 channels~;
+#X obj 397 454 dac~;
+#X msg 35 276 init 0 stereo testpatch;
+#X msg 86 298 delete 0;
+#X msg 368 304 delete 1;
+#X msg 342 282 init 1 stereo testpatch2;
+#X msg 321 389 view;
+#X msg 373 376 reset;
+#X obj 423 387 r \$0-channels;
+#X obj 34 323 s \$0-channels;
+#X text 39 238 With outlets:;
+#X text 282 221 With [dac~] (no outlets):;
+#X obj 347 335 s \$0-channels;
+#X msg 69 404 0 one;
+#X msg 108 404 0 two;
+#X msg 163 402 1 one;
+#X msg 202 402 1 two;
+#X obj 121 459 s \$0-channels;
+#X text 96 381 Play notes:;
+#X obj 122 236 testpatch;
+#X obj 442 222 testpatch2;
+#X text 66 160 Your patch doesn't need to have outlets - it will work
+fine \, but you'll get a "connection failed" error message. You can
+ignore this.;
+#X text 114 10 Load patches as channels;
+#X text 68 39 To load a patch as a channel \, it must be in a folder
+in Pd's search path (in Pd's preferences).;
+#X text 68 76 For mono patches \, it will assume it has a left [outlet~]
+that will be connected to both of the outlets in [channels~].;
+#X text 70 126 Stereo patches assume there are two [outlet~] object.
+;
+#X text 275 256 connections will fail \, but patch will work:;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 2 0 9 0;
+#X connect 3 0 9 0;
+#X connect 4 0 12 0;
+#X connect 5 0 12 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 8 0 0 0;
+#X connect 13 0 17 0;
+#X connect 14 0 17 0;
+#X connect 15 0 17 0;
+#X connect 16 0 17 0;
