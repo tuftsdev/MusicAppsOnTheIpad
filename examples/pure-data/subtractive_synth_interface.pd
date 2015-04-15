@@ -141,7 +141,7 @@
 #X msg 1188 684 waveform_length \$1;
 #X obj 1188 706 s \$0-methods;
 #X obj 1175 309 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 6300 1;
+-1 -1 0 1;
 #X floatatom 1203 472 5 0 0 0 - - -;
 #X obj 1175 526 s \$0-methods;
 #X text 1170 280 PITCHBEND:;
@@ -154,9 +154,9 @@
 #X obj 1166 103 vsl 15 80 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 1194 103 vsl 15 80 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4200 1;
+-1 -1 0 1;
 #X obj 1223 103 vsl 15 80 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7900 1;
+-1 -1 0 1;
 #N canvas 529 250 242 141 hotpack 0;
 #X obj 16 14 inlet;
 #X obj 85 15 inlet;
@@ -346,7 +346,7 @@ from. This can be also used to change the pulse-width of the waveform.
 #X obj 22 39 loadbang;
 #X msg 22 66 \; pd dsp 1 \;;
 #X obj 1240 784 hsl 80 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 7900 1;
 #X floatatom 1237 803 5 0 0 0 - - -;
 #X text 1243 762 VOLUME:;
 #X msg 1236 822 volume \$1;
@@ -369,16 +369,22 @@ from. This can be also used to change the pulse-width of the waveform.
 #X floatatom 711 416 5 0 0 1 phase - -;
 #X text 709 376 phase offset (0 to 1);
 #X obj 714 396 hsl 80 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 500 1;
+-1 -1 0 1;
 #X msg 711 436 osc3 phase \$1;
 #X floatatom 161 644 5 0 0 1 phase - -;
 #X text 159 604 phase offset (0 to 1);
 #X obj 164 624 hsl 80 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5500 1;
+-1 -1 0 1;
 #X msg 161 664 osc2 phase \$1;
 #X msg 901 435 osc3 set \$1;
-#N canvas 286 424 450 300 presets 0;
-#X restore 28 659 pd presets;
+#N canvas 655 652 450 300 presets 1;
+#X msg 36 73 osc1 on 1 \, osc2 on 2 \, osc3 on 3 \, osc1 phase 0.4
+\, osc3 phase 0.8 \, pan 0 0.5 1 \, mix 0.5 0.7 0.4 \, noise filter
+200 \, noise amount 0.1 \, osc1 cent -5 \, osc2 cent 5 \, filter frequency
+3000 \, volume 0.5;
+#X obj 41 156 outlet;
+#X connect 0 0 1 0;
+#X restore 5 688 pd presets;
 #X obj 26 735 subtractive_synth;
 #X obj 178 880 loadfloat 200;
 #X obj 266 879 loadfloat 8;
@@ -523,6 +529,7 @@ from. This can be also used to change the pulse-width of the waveform.
 #X connect 176 0 174 0;
 #X connect 177 0 55 0;
 #X connect 178 0 75 0;
+#X connect 179 0 180 0;
 #X connect 180 0 132 0;
 #X connect 180 0 140 0;
 #X connect 180 0 158 0;
